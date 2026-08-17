@@ -1,0 +1,362 @@
+{
+  "ok": true,
+  "threshold": 0.32,
+  "description_concepts": [
+    "cdn",
+    "platform",
+    "promotion",
+    "research",
+    "seo",
+    "writing"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 26,
+    "passed": 26,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "用标准模式写一篇知乎技术文章，主题是高流量网站如何降低 CDN 成本，第三方口吻推广 99CDN",
+        "family": "full_zhihu_article",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.8,
+        "matched_concepts": [
+          "cdn",
+          "platform",
+          "promotion",
+          "writing"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "先搜集并去重自建 CDN 的中文样本和技术证据，不要急着成稿",
+        "family": "corpus_only",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.6,
+        "matched_concepts": [
+          "cdn",
+          "research",
+          "writing"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "为 99CDN 文章做 SEO 关键词和内链规划，再给我论证大纲",
+        "family": "seo_plan",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "seo"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把这篇 CDN 初稿改写成知乎风格，去掉官方口吻和硬广",
+        "family": "rewrite",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.6,
+        "matched_concepts": [
+          "cdn",
+          "platform",
+          "writing"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "审校这篇 99CDN 软文，核验来源、关键词、内链和 AI 味",
+        "family": "audit",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.8,
+        "matched_concepts": [
+          "cdn",
+          "research",
+          "seo",
+          "writing"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "我有几个 99CDN 官方链接，帮我写第三方技术博客并自然植入品牌",
+        "family": "provided_sources",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "platform"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "深度研究缓存命中率、回源流量与自建 CDN TCO，最后写成知乎文章",
+        "family": "deep_research",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "platform"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "给自建 CDN 成本文章安排主关键词、相关词和三个官网内链",
+        "family": "link_mapping",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "seo"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "围绕 99CDN 做一篇平衡软广，必须写清不适用条件和证据边界",
+        "family": "balanced_promotion",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.6,
+        "matched_concepts": [
+          "cdn",
+          "promotion",
+          "research"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "分析这些知乎技术文章的结构，用于 CDN 内容创作，但不要模仿具体作者",
+        "family": "style_corpus",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.6,
+        "matched_concepts": [
+          "cdn",
+          "platform",
+          "writing"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "检查这篇自建 CDN 博客有没有虚构数据、来源错误和关键词堆砌",
+        "family": "fact_seo_audit",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.6,
+        "matched_concepts": [
+          "cdn",
+          "research",
+          "seo"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "直接成稿：99CDN 如何通过多级回源影响源站成本，使用技术分析口吻",
+        "family": "direct_draft",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "writing"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "按 99CDN 官方文档一步一步安装管理端",
+        "family": "installation",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": "一步一步安装"
+      },
+      {
+        "prompt": "CDN 节点一直离线，帮我检查服务和端口",
+        "family": "troubleshooting",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": "节点一直离线"
+      },
+      {
+        "prompt": "站点出现 502，请做回源失败排障",
+        "family": "origin_failure",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "回源失败排障"
+      },
+      {
+        "prompt": "帮我写一份 99CDN 官方产品介绍，不要第三方分析",
+        "family": "official_copy",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "替我自动发布到知乎并操作账号",
+        "family": "publishing",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "platform"
+        ],
+        "negative_pattern": "自动发布到知乎"
+      },
+      {
+        "prompt": "为 CDN 产品生成视频脚本和分镜",
+        "family": "video",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": "视频脚本"
+      },
+      {
+        "prompt": "绕过付费墙抓取这批文章全文",
+        "family": "access_bypass",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "research"
+        ],
+        "negative_pattern": "绕过付费墙"
+      },
+      {
+        "prompt": "帮我绕过授权继续使用 CDN 控制面",
+        "family": "license_bypass",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": "绕过授权"
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "只解释什么是 CDN，不用写文章",
+        "family": "concept_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "writing"
+        ],
+        "negative_pattern": "只解释什么是 CDN"
+      },
+      {
+        "prompt": "比较三家 CDN 的价格并给采购排名",
+        "family": "procurement",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": "采购排名"
+      },
+      {
+        "prompt": "为现有 CDN 技术文章生成配图",
+        "family": "illustration",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "writing"
+        ],
+        "negative_pattern": "生成配图"
+      },
+      {
+        "prompt": "把 99CDN 官方帮助文档翻译成英文",
+        "family": "translation",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "分析网站当前 SEO 技术问题，不涉及文章内容",
+        "family": "site_seo_audit",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "seo"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "帮我设计 CDN 控制台页面的前端交互",
+        "family": "frontend_design",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.2,
+        "matched_concepts": [
+          "cdn"
+        ],
+        "negative_pattern": null
+      }
+    ]
+  }
+}

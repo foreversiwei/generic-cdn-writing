@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {
+      "id": "99cdn-cost-zhihu-standard",
+      "prompt": "使用标准模式写一篇知乎技术文章：高流量网站如何降低 CDN 成本？试试自建 CDN。主关键词为自建CDN，必须内链 https://www.99cdn.com/，以第三方技术分析口吻平衡推广 99CDN。",
+      "input_files": [
+        "evals/fixtures/99cdn-source-pack.md"
+      ],
+      "baseline_output": "workspace outputs/writing-pipeline-zh-article.md when available",
+      "with_skill_output": "workspace outputs/generic-cdn-writing-article.md",
+      "assertions": [
+        "article contains 1800-3500 non-whitespace Chinese characters",
+        "article links at least four current 99CDN official pages",
+        "required internal link https://www.99cdn.com/ is present",
+        "primary keyword appears in title, opening, and at least one heading",
+        "article includes TCO or equivalent total-cost reasoning",
+        "article includes an inapplicable condition or stop rule",
+        "article does not invent price, savings percentage, customer case, or first-person test",
+        "scripts/audit_article.py exits zero"
+      ],
+      "human_notes": [
+        "Does the article read like a Zhihu technical analysis rather than an official product page?",
+        "Is the 99CDN placement useful and natural?",
+        "Are headings arguments rather than generic topics?",
+        "Does the prose avoid mechanical AI rhythm?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+interface:
+  display_name: "Generic CDN Writing"
+  short_description: "一站式调度 CDN 素材、SEO、知乎写作、软广与审校"
+  default_prompt: "使用 $generic-cdn-writing，把 CDN 写作任务按素材研究、SEO/内链、知乎技术论证、第三方软广和独立审校阶段执行。先建立来源账本；产品与数字声明必须可追溯；不得虚构亲测或冒充独立用户。根据任务选择快速、标准或深度模式，并交付 brief、来源、SEO 计划、大纲、成稿和审计结果。"
+  examples:
+    - "用标准模式写一篇知乎技术文章，主题是高流量网站如何降低 CDN 成本，推广 99CDN"
+    - "先搜集并去重自建 CDN、缓存命中率和回源成本的中文样本，不要写正文"
+    - "这是初稿和三个内链，按第三方口吻重写并检查 SEO 和 AI 味"
+    - "审校这篇 99CDN 软文，逐条核验产品声明并指出硬广段落"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "openai"
+    - "claude"
+    - "generic"
+    - "agent-skills-compatible"
+  activation:
+    mode: "manual-or-semantic"
+    paths:
+      - ".agents/skills/generic-cdn-writing"
+  execution:
+    context: "inline"
+    shell: "powershell-or-bash-as-user-environment-requires"
+  trust:
+    source_tier: "workspace-local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow read-only public search and current source retrieval"
+    generated_public_claims: "evidence-bound"
+  permissions:
+    network: "read-only public search and page retrieval when research is required"
+    file_write: "workspace-local article artifacts and reports only"
+    subprocess: "bundled deterministic corpus and article audit scripts"
+    interactive: "ask only when a missing choice would materially change the article"
+  degradation:
+    openai: "full workspace-local workflow"
+    claude: "canonical workflow with available search tools"
+    generic: "manual-or-semantic activation; deterministic scripts remain portable"
+    agent-skills-compatible: "canonical package"
+gates:
+  production_candidate:
+    - "root-only discoverable SKILL.md"
+    - "positive, negative, and near-neighbor trigger cases"
+    - "source ledger before product claims"
+    - "SEO and internal-link plan before drafting"
+    - "no fabricated tests, prices, metrics, or independent endorsement"
+    - "automatic audit plus human rubric"
+    - "provider-backed or human blind-review claims forbidden without evidence"

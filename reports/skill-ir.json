@@ -1,0 +1,194 @@
+{
+  "schema_version": "2.0.0-generic-lite",
+  "generated_at": "2026-08-17",
+  "package": {
+    "name": "generic-cdn-writing",
+    "version": "0.1.0",
+    "owner": "foreversiwei",
+    "maturity_tier": "production",
+    "lifecycle_stage": "public-release-candidate",
+    "upstream_inspiration": null,
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "为 99CDN、自建 CDN 和 CDN 成本优化主题创作有证据的中文技术文章。适用于知乎第三方口吻软文、SEO 技术博客、关键词与内链规划、样本搜集去重、文章改写和发布前审校；当用户只要官方产品介绍、CDN 安装排障、平台代发布、虚构测评或抓取登录/付费内容时不要触发。",
+    "job_to_be_done": "把 CDN 文章需求调度为来源研究、SEO 与内链规划、知乎技术写作、第三方软广控制和独立审校的完整流水线。",
+    "target_users": [
+      "99CDN 内容运营者",
+      "CDN 技术内容作者",
+      "知乎与技术博客编辑"
+    ],
+    "inputs": [
+      "主题与目标读者",
+      "主次关键词",
+      "必须内链",
+      "产品与来源资料",
+      "篇幅和推广强度"
+    ],
+    "outputs": [
+      "文章 brief",
+      "来源账本",
+      "SEO 与内链计划",
+      "论证大纲",
+      "文章成稿",
+      "审计报告"
+    ],
+    "exclusions": [
+      "CDN 安装排障",
+      "自动发布",
+      "绕过访问控制抓取",
+      "虚构第三方测评",
+      "排名或转化保证"
+    ],
+    "package_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "用标准模式写一篇知乎技术文章，主题是高流量网站如何降低 CDN 成本，第三方口吻推广 99CDN",
+      "先搜集并去重自建 CDN 的中文样本和技术证据，不要急着成稿",
+      "为 99CDN 文章做 SEO 关键词和内链规划，再给我论证大纲",
+      "把这篇 CDN 初稿改写成知乎风格，去掉官方口吻和硬广",
+      "审校这篇 99CDN 软文，核验来源、关键词、内链和 AI 味",
+      "我有几个 99CDN 官方链接，帮我写第三方技术博客并自然植入品牌",
+      "深度研究缓存命中率、回源流量与自建 CDN TCO，最后写成知乎文章",
+      "给自建 CDN 成本文章安排主关键词、相关词和三个官网内链",
+      "围绕 99CDN 做一篇平衡软广，必须写清不适用条件和证据边界",
+      "分析这些知乎技术文章的结构，用于 CDN 内容创作，但不要模仿具体作者",
+      "检查这篇自建 CDN 博客有没有虚构数据、来源错误和关键词堆砌",
+      "直接成稿：99CDN 如何通过多级回源影响源站成本，使用技术分析口吻"
+    ],
+    "should_not_trigger": [
+      "按 99CDN 官方文档一步一步安装管理端",
+      "CDN 节点一直离线，帮我检查服务和端口",
+      "站点出现 502，请做回源失败排障",
+      "帮我写一份 99CDN 官方产品介绍，不要第三方分析",
+      "替我自动发布到知乎并操作账号",
+      "为 CDN 产品生成视频脚本和分镜",
+      "绕过付费墙抓取这批文章全文",
+      "帮我绕过授权继续使用 CDN 控制面"
+    ],
+    "near_neighbor": [
+      "只解释什么是 CDN，不用写文章",
+      "比较三家 CDN 的价格并给采购排名",
+      "为现有 CDN 技术文章生成配图",
+      "把 99CDN 官方帮助文档翻译成英文",
+      "分析网站当前 SEO 技术问题，不涉及文章内容",
+      "帮我设计 CDN 控制台页面的前端交互"
+    ]
+  },
+  "workflow": {
+    "router_rules": [
+      "完整文章、知乎软文或 SEO 技术稿默认进入 `成稿模式 + 标准深度`。",
+      "只要样本、来源或选题证据时进入 `素材模式`；只要关键词、内链或大纲时进入 `规划模式`。",
+      "已有文章要求重构时进入 `改写模式`；只要求检查时进入 `审校模式`。",
+      "安装排障、官方产品介绍、自动发布、视频创作和非公开内容抓取不进入本 Skill。"
+    ],
+    "compact_workflow": [
+      "固化 Brief 和不可违反的约束。",
+      "建立来源账本并标注声明支持程度。",
+      "规划搜索意图、关键词簇和内链位置。",
+      "用问题机制、适用条件、反例和决策方法构造论证。",
+      "以第三方技术口吻起草，并让产品只承接有证据的变量。",
+      "独立运行自动审计与人工 rubric，修复硬失败后交付。"
+    ],
+    "gate_ladder": [
+      "`G0 入口`：任务属于 CDN 中文文章研究、规划、写作、改写或审校。",
+      "`G1 证据`：产品关键声明有当前官方来源，第三方样本没有越权证明。",
+      "`G2 结构`：文章有核心判断、追问链、限制条件和可执行决策方法。",
+      "`G3 商业`：无虚构体验、数据或背书，推广内容与技术论据直接相关。",
+      "`G4 交付`：自动审计无 hard fail，人工评分单项不低于 60%。"
+    ],
+    "output_contract": [
+      "`brief.md`：受众、目标、关键词、内链、篇幅、软广强度和禁止声明。",
+      "`sources.jsonl`：去重后的来源卡片与声明支持状态。",
+      "`seo-plan.md`：搜索意图、关键词簇、标题候选和内链映射。",
+      "`outline.md`：核心判断、追问链、证据位置、反例和产品连接点。",
+      "`article.md`：带来源与自然内链的第三方技术文章。",
+      "`audit.json`：确定性指标、hard fail、warning 与人工复核项目。"
+    ]
+  },
+  "resources": {
+    "references": [
+      "references\\quality-rubric.md",
+      "references\\seo-linking.md",
+      "references\\soft-ad.md",
+      "references\\source-policy.md",
+      "references\\workflow.md",
+      "references\\zhihu-style.md"
+    ],
+    "scripts": [
+      "scripts\\audit_article.py",
+      "scripts\\build_source_cards.py",
+      "scripts\\validate_skill.py"
+    ],
+    "evals": [
+      "evals\\__pycache__\\test_scripts.cpython-314.pyc",
+      "evals\\fixtures\\99cdn-source-pack.md",
+      "evals\\output_cases.json",
+      "evals\\test_scripts.py",
+      "evals\\trigger_cases.json"
+    ],
+    "reports": [
+      "reports\\creation-handoff.md",
+      "reports\\output-evidence.json",
+      "reports\\prior-art-research.md",
+      "reports\\release-check-local.json",
+      "reports\\skill-ir.json",
+      "reports\\trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": "agent-skills",
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {
+      "mode": "manual-or-semantic",
+      "paths": [
+        ".agents/skills/generic-cdn-writing"
+      ]
+    },
+    "execution": {
+      "context": "inline",
+      "shell": "powershell-or-bash-as-user-environment-requires"
+    },
+    "trust": {
+      "source_tier": "workspace-local",
+      "remote_inline_execution": "forbid",
+      "remote_metadata_policy": "allow read-only public search and current source retrieval",
+      "generated_public_claims": "evidence-bound"
+    },
+    "permissions": {
+      "network": "read-only public search and page retrieval when research is required",
+      "file_write": "workspace-local article artifacts and reports only",
+      "subprocess": "bundled deterministic corpus and article audit scripts",
+      "interactive": "ask only when a missing choice would materially change the article"
+    },
+    "degradation": {
+      "openai": "full workspace-local workflow",
+      "claude": "canonical workflow with available search tools",
+      "generic": "manual-or-semantic activation; deterministic scripts remain portable",
+      "agent-skills-compatible": "canonical package"
+    }
+  },
+  "gates": {
+    "production_candidate": [
+      "root-only discoverable SKILL.md",
+      "positive, negative, and near-neighbor trigger cases",
+      "source ledger before product claims",
+      "SEO and internal-link plan before drafting",
+      "no fabricated tests, prices, metrics, or independent endorsement",
+      "automatic audit plus human rubric",
+      "provider-backed or human blind-review claims forbidden without evidence"
+    ]
+  },
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}
