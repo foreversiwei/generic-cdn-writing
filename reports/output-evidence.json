@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "skill": "generic-cdn-writing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "generated_at": "2026-08-17",
   "evidence": [
     {
@@ -28,6 +28,11 @@
       "kind": "source-card-generation",
       "result": "pass",
       "detail": "12 unique sources: 9 official and 3 third-party"
+    },
+    {
+      "kind": "published-package-verification",
+      "result": "pass",
+      "detail": "feature-branch PR merged; release discovery and isolated installation passed"
     }
   ],
   "missing_evidence": [

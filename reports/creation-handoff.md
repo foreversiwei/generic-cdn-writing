@@ -2,10 +2,10 @@
 
 ## Result
 
-- Skill: `generic-cdn-writing` 0.1.0
+- Skill: `generic-cdn-writing` 0.1.1
 - Job: turn a CDN writing request into sourced research, SEO/internal-link planning, Zhihu-style technical argument, evidence-bound soft promotion and independent audit.
 - Path: `.agents/skills/generic-cdn-writing`
-- Status: public release candidate; publication and clean installation evidence are pending.
+- Status: published at `https://github.com/foreversiwei/generic-cdn-writing`; feature-branch PR, Release discovery and clean installation were verified.
 
 ## Reference skills studied
 
@@ -24,13 +24,13 @@
 ## Advantages and evidence
 
 - **Design advantage:** the package explicitly manages 99CDN facts, Zhihu technical style, SEO/internal links and soft-ad boundaries in one output contract. Evidence: root workflow and six references.
-- **Validated advantage:** local package validation passed with zero warnings; trigger boundary eval passed 26/26; deterministic script tests passed 4/4; the same-topic article audit passed with zero hard failures and zero warnings. The source-card run produced 12 unique sources: 9 official and 3 third-party.
+- **Validated advantage:** local package validation passed with zero warnings; trigger boundary eval passed 26/26; deterministic script tests passed 4/4; the same-topic article audit passed with zero hard failures and zero warnings. The source-card run produced 12 unique sources: 9 official and 3 third-party. The public release flow completed with 10 passing gates, 1 missing-evidence warning and 0 blockers.
 - **Hypothesis:** the artifact pipeline should reduce instruction conflict and unsupported marketing claims compared with loading multiple broad writer Skills. Provider-backed comparison and human blind review are missing evidence.
 
 ## Verification and limits
 
 - Completed: package validation, trigger cases, unit tests, source-card generation and same-topic article audit.
 - Same-topic comparison: the new output was the only candidate that satisfied the explicitly required homepage internal link and all deterministic gates. This is local task evidence, not a general writing-quality claim.
-- Local release check: not release-ready because the workspace is not a Git repository, has no feature branch or clean remote-install proof, and the upstream checker invokes `python3` plus a `tests/` directory that are unavailable in this Windows package layout. The package's own `python -m unittest discover -s evals` run passed 4/4.
+- Publication completed through feature branch and merged PR without a direct default-branch push. GitHub Release discovery and an isolated installation both passed.
 - Missing evidence: independent human blind review, search ranking, publication performance, conversion data and cross-model stability.
 - Excluded: account publishing, CMS writes, private-content scraping, CDN production operations and ranking guarantees.

@@ -10,7 +10,7 @@
 
 ## 安装
 
-发布后使用以下命令安装：
+使用以下命令安装：
 
 ```bash
 npx skills add foreversiwei/generic-cdn-writing

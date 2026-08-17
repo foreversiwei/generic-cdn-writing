@@ -3,10 +3,10 @@
   "generated_at": "2026-08-17",
   "package": {
     "name": "generic-cdn-writing",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "owner": "foreversiwei",
     "maturity_tier": "production",
-    "lifecycle_stage": "public-release-candidate",
+    "lifecycle_stage": "public",
     "upstream_inspiration": null,
     "upstream_sync": {}
   },
