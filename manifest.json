@@ -1,0 +1,59 @@
+{
+  "name": "generic-cdn-writing",
+  "version": "0.1.0",
+  "owner": "foreversiwei",
+  "updated_at": "2026-08-17",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "public-release-candidate",
+  "context_budget_tier": "production",
+  "review_cadence": "monthly",
+  "primary_domain": "99cdn-content",
+  "target_platforms": [
+    "openai",
+    "claude",
+    "generic",
+    "agent-skills-compatible"
+  ],
+  "intent": {
+    "job_to_be_done": "把 CDN 文章需求调度为来源研究、SEO 与内链规划、知乎技术写作、第三方软广控制和独立审校的完整流水线。",
+    "target_users": [
+      "99CDN 内容运营者",
+      "CDN 技术内容作者",
+      "知乎与技术博客编辑"
+    ],
+    "inputs": [
+      "主题与目标读者",
+      "主次关键词",
+      "必须内链",
+      "产品与来源资料",
+      "篇幅和推广强度"
+    ],
+    "outputs": [
+      "文章 brief",
+      "来源账本",
+      "SEO 与内链计划",
+      "论证大纲",
+      "文章成稿",
+      "审计报告"
+    ],
+    "exclusions": [
+      "CDN 安装排障",
+      "自动发布",
+      "绕过访问控制抓取",
+      "虚构第三方测评",
+      "排名或转化保证"
+    ]
+  },
+  "evidence_policy": "evidence-bound",
+  "installation_scope": "GitHub and agent-skills-compatible installers",
+  "public_release": true,
+  "release_gates": [
+    "local_structure_validation",
+    "trigger_boundary_eval",
+    "script_unit_tests",
+    "article_output_audit",
+    "root_entrypoint_isolation",
+    "evidence_bound_claims"
+  ]
+}

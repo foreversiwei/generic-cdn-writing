@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "skill": "generic-cdn-writing",
+  "version": "0.1.0",
+  "generated_at": "2026-08-17",
+  "evidence": [
+    {
+      "kind": "local-package-validation",
+      "result": "pass",
+      "detail": "0 failures, 0 warnings"
+    },
+    {
+      "kind": "trigger-boundary-eval",
+      "result": "pass",
+      "detail": "26/26 cases, 0 false positives, 0 false negatives"
+    },
+    {
+      "kind": "deterministic-unit-tests",
+      "result": "pass",
+      "detail": "4/4 tests"
+    },
+    {
+      "kind": "same-topic-article-audit",
+      "result": "pass",
+      "detail": "0 hard failures, 0 warnings; 6 official sources; required homepage link present"
+    },
+    {
+      "kind": "source-card-generation",
+      "result": "pass",
+      "detail": "12 unique sources: 9 official and 3 third-party"
+    }
+  ],
+  "missing_evidence": [
+    "provider-backed output comparison",
+    "completed human blind review",
+    "published article ranking and traffic",
+    "conversion or editorial acceptance data",
+    "cross-model stability"
+  ],
+  "claim_policy": "Static fixtures, author self-review, and deterministic audits do not count as provider-backed or human-blind-review evidence."
+}
