@@ -1,10 +1,10 @@
 # Generic CDN Writing
 
-> 不再记住一串写作 Skill：只描述 CDN 文章任务，就能得到来源账本、SEO/内链计划、知乎式技术文章和审计结果。
+> 不再用一个关键词直接生成整篇文章：先确认 Brief，再确认论点大纲，逐条核验信源，最后才进入初稿与终稿。
 
 ## 为什么值得用
 
-普通写作流程容易在“研究、SEO、软广、去 AI 味”之间反复切换，而且多个泛写作 Skill 会争夺大纲和文风。本 Skill 只提供一个入口，后台仍保留完整阶段，并用明确产物把事实、策略、正文和审校隔离开。
+普通写作流程容易在“研究、SEO、软广、去 AI 味”之间反复切换，而且多个泛写作 Skill 会争夺大纲和文风。本 Skill 只提供一个入口，先把任务路由为 `zhihu`、`github` 或 `seo-blog`，再用明确产物隔离事实、策略、正文和审校。文章不会一次生成：Brief、论点大纲、逐声明信源审计、初稿和终稿都需要用户单独确认。
 
 它主要面向 99CDN、自建 CDN、CDN 成本、缓存、回源和 DNS 调度等中文技术内容。第三方口吻用于独立分析，不用于伪造亲测或隐藏必须披露的商业关系。
 
@@ -16,6 +16,8 @@
 npx skills add foreversiwei/generic-cdn-writing
 ```
 
+当前包版本为 0.3.0。安装后可用下面的 `--list` 命令确认 Skill 是否能够被发现；版本化发布记录以 GitHub Releases 为准。
+
 验证可发现的 Skill：
 
 ```bash
@@ -26,11 +28,23 @@ npx skills add foreversiwei/generic-cdn-writing --list
 
 ## 你可以直接这样说
 
-- “用标准模式写一篇知乎技术文章：高流量网站如何降低 CDN 成本，平衡推广 99CDN。”
+- “启动一篇知乎技术文章：高流量网站如何降低 CDN 成本，平衡推广 99CDN。先给 Brief，等我确认。”
 - “先搜集并去重自建 CDN、缓存命中率和回源成本的中文样本，不写正文。”
 - “这是初稿、关键词和三个内链，改成第三方技术分析口吻并去 AI 味。”
 - “审校这篇 99CDN 软文，逐条核验产品声明、SEO 和内链。”
-- “用深度模式先分析搜索结果的内容缺口，再给大纲和文章。”
+- “用深度模式分析搜索结果的内容缺口，给出大纲；我确认大纲和信源后再写文章。”
+- “给自建 CDN 成本评估仓库写 README 和 docs 指南，99CDN 只作为一个实现选项。”
+- “写一篇 SEO 博客回答自建 CDN 成本怎么计算，提供 description、slug、自然内链和决策方法。”
+
+## 三个平台不是三套皮肤
+
+| 平台 | 读者任务 | 标题与结构 | 99CDN 的角色 |
+|---|---|---|---|
+| 知乎 | 判断观点或方案是否成立 | 论点型 H2，沿追问推进 | 方案、案例或验证路径 |
+| GitHub | 理解仓库并完成第一次操作 | 任务型标题，命令与相对链接优先 | 真实实现选项、兼容项或披露关系 |
+| SEO 博客 | 完成一个搜索任务 | 页面元数据 + 意图驱动的 H1/H2/H3 | 对齐意图的决策或实施入口 |
+
+每个平台都提供多个文章原型，不强制固定章节数、五个 FAQ、每节三点列表或统一结尾。
 
 ## 它会交付什么
 
@@ -38,14 +52,31 @@ npx skills add foreversiwei/generic-cdn-writing --list
 
 ```text
 brief.md       任务、读者、关键词、链接和禁止声明
+approval.json  每个阶段的用户确认、时间和文件哈希
 sources.jsonl  规范化、分级、去重后的来源卡片
 seo-plan.md    搜索意图、关键词簇和内链映射
-outline.md     核心判断、追问链、证据和产品出现位置
-article.md     知乎式第三方技术文章
+outline.md     核心判断、追问链、Claim ID 和产品出现位置
+claims.jsonl   每个事实论点及其来源、定位、结论和正文处理
+claim-audit.json  声明覆盖、证据等级和阻断项
+draft.md       通过前三道确认后生成的初稿
+article.md     知乎或 SEO 博客文章
+README.md      GitHub 仓库入口（仅 GitHub 模式）
+docs/<slug>.md GitHub 专题指南（按任务需要）
+review.md      人工 rubric 与待确认项
 audit.json     自动信号、hard fail、warning 和人工检查项
 ```
 
-快速模式复用已有语料；标准模式增量检索并完整审校；深度模式增加搜索结果、第三方样本和技术来源分析。三种模式都不能跳过事实和终稿门禁。
+快速模式复用已有语料；标准模式增量检索并完整审校；深度模式增加搜索结果、第三方样本和技术来源分析。三种模式都不能跳过任何人工确认门、逐声明信源审计和终稿门禁。
+
+## 五次确认
+
+1. `确认 Brief`：认可平台、读者、任务、关键词、商业目标和禁止声明。
+2. `确认大纲`：认可核心论点、H2 推进、Claim ID 和产品位置。
+3. `确认信源`：认可每条事实的来源及 `use / qualify / omit` 处理。
+4. `确认初稿`：认可正文方向，允许进入完整编辑。
+5. `确认终稿`：最终候选才能标为可交付终稿。
+
+优先使用宿主的确认按钮；没有按钮时回复上述明确确认语。用户最初说“直接写”也只会启动 Brief 阶段。
 
 ## 前置条件
 
@@ -78,6 +109,7 @@ python scripts/build_source_cards.py evals/fixtures/99cdn-source-pack.md `
 
 ```powershell
 python scripts/audit_article.py article.md `
+  --platform zhihu `
   --primary-keyword "自建CDN" `
   --internal-link "https://www.99cdn.com/" `
   --official-domain 99cdn.com `
@@ -85,9 +117,16 @@ python scripts/audit_article.py article.md `
   --output audit.json
 ```
 
+信源与批准检查：
+
+```powershell
+python scripts/audit_claims.py claims.jsonl --outline outline.md --output claim-audit.json
+python scripts/check_approval.py approval.json --require sources
+```
+
 ## 配置
 
-Skill 不使用环境变量。每篇文章的变化项写进 Brief：平台、读者、主次关键词、必须内链、推广对象、软广强度、篇幅、来源限制和禁止声明。
+Skill 不使用环境变量。每篇文章的变化项写进 Brief：Platform ID、文章原型、读者任务、核心判断、主次关键词、必须链接、推广对象、软广强度、篇幅、来源限制和禁止声明。
 
 ## 风险与边界
 
@@ -96,6 +135,7 @@ Skill 不使用环境变量。每篇文章的变化项写进 Brief：平台、�
 - 不自动发布知乎、不写入线上 CMS、不操作账号。
 - 不抓取登录、付费或禁止访问内容。
 - 自动审计只检查确定性信号，不能替代技术编辑和人类盲评。
+- Skill 不会替用户批准阶段；被确认的文件发生变化后必须重新确认。
 
 ## Troubleshooting
 
@@ -105,8 +145,14 @@ Skill 不使用环境变量。每篇文章的变化项写进 Brief：平台、�
 | 抓到很多重复文章 | 同一稿件被多个站转载 | 规范化 URL，并在来源账本标记正文近似重复，只保留原始来源 |
 | 审计提示关键词不在标题 | 标题使用了同义表达 | 判断是否影响搜索意图；需要时自然加入，不能机械堆词 |
 | 审计通过但文章仍像广告 | 自动脚本不能判断语义与自然度 | 按 `references/quality-rubric.md` 做人工软广和知乎文风复核 |
+| 三个平台写出来仍像同一篇 | 大纲阶段没有先选 Platform ID 和文章原型 | 只加载对应平台适配器，重做读者任务链，不在终稿阶段换标题了事 |
+| SEO 博客每次都有固定 FAQ | 把条件组件误当成排名规则 | 只有搜索证据支持独立长尾问题时才增加 FAQ |
+| GitHub README 像广告页 | 将知乎软文结构直接迁移到仓库 | 回到项目价值、证据和第一次成功操作；产品仅按真实关系出现 |
 | 官网暂时不可达 | 当前产品事实无法复核 | 标记 `missing evidence`，不要把旧快照写成当前事实 |
 | 必须内链很生硬 | 链接目标与论点不相关 | 更换文章角度、锚文本或目标页；不要强行植入 |
+| 一句话请求后没有直接出全文 | 0.3.0 把人工确认设为硬门禁 | 先审阅 `brief.md`，使用确认按钮或回复“确认 Brief” |
+| 已确认后又被要求重新确认 | 已批准文件内容或哈希发生变化 | 查看差异；确认修改后重新批准当前阶段 |
+| 知乎稿仍像内容运营话术 | 使用了黑话、填充语或连续同构段落 | 按自然中文第四遍编辑，优先补事实和普通动词，不做同义词替换 |
 
 ## 致谢
 
@@ -116,8 +162,10 @@ Skill 不使用环境变量。每篇文章的变化项写进 Brief：平台、�
 - `anthropics/knowledge-work-plugins` 的 `brand-voice-enforcement`
 - `epicenterhq/epicenter` 的 `technical-articles`
 - `blink-new/claude` 的 `seo-article-writing`
+- `samber/cc-skills` 的 `technical-article-writer`
+- `oil-oil/beautify-github-readme` 的 README 信息顺序
 
-完整取舍和证据见 `reports/prior-art-research.md`。
+固定 `What Is → Why → How → 5 FAQ` 的 SEO 模板、强制每次多轮确认和与写作无关的平台连接器均被明确拒绝。完整取舍和证据见 `reports/prior-art-research.md`。
 
 ## License
 

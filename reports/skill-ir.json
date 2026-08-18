@@ -1,22 +1,23 @@
 {
-  "schema_version": "2.0.0-generic-lite",
-  "generated_at": "2026-08-17",
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-08-18",
   "package": {
     "name": "generic-cdn-writing",
-    "version": "0.1.1",
+    "version": "0.3.0",
     "owner": "foreversiwei",
     "maturity_tier": "production",
-    "lifecycle_stage": "public",
+    "lifecycle_stage": "public-release-candidate",
     "upstream_inspiration": null,
     "upstream_sync": {}
   },
   "intent": {
-    "description": "为 99CDN、自建 CDN 和 CDN 成本优化主题创作有证据的中文技术文章。适用于知乎第三方口吻软文、SEO 技术博客、关键词与内链规划、样本搜集去重、文章改写和发布前审校；当用户只要官方产品介绍、CDN 安装排障、平台代发布、虚构测评或抓取登录/付费内容时不要触发。",
-    "job_to_be_done": "把 CDN 文章需求调度为来源研究、SEO 与内链规划、知乎技术写作、第三方软广控制和独立审校的完整流水线。",
+    "description": "通过 Brief、论点大纲、逐声明信源审计、初稿和终稿的人工确认流程，为 99CDN、自建 CDN 和 CDN 成本优化主题创作有证据、符合平台语境的中文技术内容。适用于知乎技术文章与第三方口吻软广、GitHub README/仓库指南、SEO 博客、关键词与内链规划、公开样本搜集、文章改写和发布前审校；当用户只要官方产品介绍、CDN 安装排障、平台代发布、虚构测评或抓取登录/付费内容时不要触发。",
+    "job_to_be_done": "把 CDN 内容需求调度为由用户逐阶段确认的 Brief、论点大纲、逐声明信源审计、知乎/GitHub/SEO 博客写作和独立审校流水线。",
     "target_users": [
       "99CDN 内容运营者",
       "CDN 技术内容作者",
-      "知乎与技术博客编辑"
+      "知乎与 SEO 博客编辑",
+      "GitHub 技术文档维护者"
     ],
     "inputs": [
       "主题与目标读者",
@@ -27,7 +28,9 @@
     ],
     "outputs": [
       "文章 brief",
+      "人工批准状态",
       "来源账本",
+      "逐声明信源审计",
       "SEO 与内链计划",
       "论证大纲",
       "文章成稿",
@@ -40,7 +43,7 @@
       "虚构第三方测评",
       "排名或转化保证"
     ],
-    "package_defaults": {}
+    "qiaomu_defaults": {}
   },
   "triggers": {
     "should_trigger": [
@@ -55,7 +58,9 @@
       "围绕 99CDN 做一篇平衡软广，必须写清不适用条件和证据边界",
       "分析这些知乎技术文章的结构，用于 CDN 内容创作，但不要模仿具体作者",
       "检查这篇自建 CDN 博客有没有虚构数据、来源错误和关键词堆砌",
-      "直接成稿：99CDN 如何通过多级回源影响源站成本，使用技术分析口吻"
+      "直接成稿：99CDN 如何通过多级回源影响源站成本，使用技术分析口吻",
+      "给这个自建 CDN 成本评估仓库写 README 和 docs 指南，99CDN 只作为一种控制面实现",
+      "写一篇 SEO 博客回答自建 CDN 成本怎么计算，提供 meta description、内链和决策表"
     ],
     "should_not_trigger": [
       "按 99CDN 官方文档一步一步安装管理端",
@@ -78,38 +83,46 @@
   },
   "workflow": {
     "router_rules": [
-      "完整文章、知乎软文或 SEO 技术稿默认进入 `成稿模式 + 标准深度`。",
-      "只要样本、来源或选题证据时进入 `素材模式`；只要关键词、内链或大纲时进入 `规划模式`。",
-      "已有文章要求重构时进入 `改写模式`；只要求检查时进入 `审校模式`。",
-      "安装排障、官方产品介绍、自动发布、视频创作和非公开内容抓取不进入本 Skill。"
+      "`zhihu`：知乎回答、专栏文章、第三方技术软文。",
+      "`github`：仓库 README、`docs/` 指南、架构或决策记录。",
+      "`seo-blog`：以搜索意图、页面元数据、关键词和内链为约束的博客。",
+      "`素材模式`：搜集、分级、去重公开样本，交付来源卡片与缺口。",
+      "`规划模式`：生成平台原型、搜索意图、关键词/链接计划与论证大纲。",
+      "`成稿模式`：研究、规划、写作、平台编辑与审校；完整文章默认使用。",
+      "`改写模式`：保留可证实事实，重建平台结构和论证，不做同义替换。",
+      "`审校模式`：先交付问题、证据缺口和修改动作，不默认重写全文。"
     ],
     "compact_workflow": [
-      "固化 Brief 和不可违反的约束。",
-      "建立来源账本并标注声明支持程度。",
-      "规划搜索意图、关键词簇和内链位置。",
-      "用问题机制、适用条件、反例和决策方法构造论证。",
-      "以第三方技术口吻起草，并让产品只承接有证据的变量。",
-      "独立运行自动审计与人工 rubric，修复硬失败后交付。"
+      "生成 Brief，展示后等待用户确认。",
+      "生成论点与大纲，为拟使用的事实分配 Claim ID，展示后等待确认。",
+      "逐条建立信源账本并运行声明审计，展示后等待确认。",
+      "通过前三道确认后才写初稿，展示初稿与问题后等待确认。",
+      "用户批准初稿后编辑终稿；用户再次确认后才标记为最终稿。"
     ],
     "gate_ladder": [
-      "`G0 入口`：任务属于 CDN 中文文章研究、规划、写作、改写或审校。",
-      "`G1 证据`：产品关键声明有当前官方来源，第三方样本没有越权证明。",
-      "`G2 结构`：文章有核心判断、追问链、限制条件和可执行决策方法。",
-      "`G3 商业`：无虚构体验、数据或背书，推广内容与技术论据直接相关。",
-      "`G4 交付`：自动审计无 hard fail，人工评分单项不低于 60%。"
+      "产品关键声明能回到当前来源，没有虚构数据、测试、客户或节省结果。",
+      "已选择且只使用一个平台适配器，交付路径和格式符合该平台任务。",
+      "标题层级连续，标题能总领正文，不是随意截取句子或通用目录词。",
+      "文章交付模型、步骤、清单、验证方法或停止条件等真实实用价值。",
+      "关键词和链接自然、相关、可解释；产品内容不取代主体论证。",
+      "自动审计无 hard fail，人工 rubric 任一维度不低于满分的 60%。",
+      "Brief、大纲、信源、初稿和终稿的批准记录顺序完整，批准文件哈希与当前文件一致。"
     ],
     "output_contract": [
-      "`brief.md`：受众、目标、关键词、内链、篇幅、软广强度和禁止声明。",
-      "`sources.jsonl`：去重后的来源卡片与声明支持状态。",
-      "`seo-plan.md`：搜索意图、关键词簇、标题候选和内链映射。",
-      "`outline.md`：核心判断、追问链、证据位置、反例和产品连接点。",
-      "`article.md`：带来源与自然内链的第三方技术文章。",
-      "`audit.json`：确定性指标、hard fail、warning 与人工复核项目。"
+      "共享产物：`brief.md`、`approval.json`、`sources.jsonl`、`seo-plan.md`、`outline.md`、`claims.jsonl`、`claim-audit.json`、`draft.md`、`review.md` 和 `audit.json`。",
+      "知乎：`article.md`，采用论点推进和可执行决策方法。",
+      "GitHub：`README.md` 或 `docs/<slug>.md`，采用仓库任务与可复现输入。",
+      "SEO 博客：`article.md` 加 frontmatter 或 `seo-meta.md`，采用单一搜索意图。"
     ]
   },
   "resources": {
     "references": [
+      "references\\approval-gates.md",
+      "references\\github-style.md",
+      "references\\human-editing.md",
+      "references\\platform-router.md",
       "references\\quality-rubric.md",
+      "references\\seo-blog-style.md",
       "references\\seo-linking.md",
       "references\\soft-ad.md",
       "references\\source-policy.md",
@@ -118,11 +131,12 @@
     ],
     "scripts": [
       "scripts\\audit_article.py",
+      "scripts\\audit_claims.py",
       "scripts\\build_source_cards.py",
+      "scripts\\check_approval.py",
       "scripts\\validate_skill.py"
     ],
     "evals": [
-      "evals\\__pycache__\\test_scripts.cpython-314.pyc",
       "evals\\fixtures\\99cdn-source-pack.md",
       "evals\\output_cases.json",
       "evals\\test_scripts.py",
@@ -131,10 +145,13 @@
     "reports": [
       "reports\\creation-handoff.md",
       "reports\\output-evidence.json",
+      "reports\\platform-evaluation.md",
+      "reports\\platform-prior-art-candidates.json",
       "reports\\prior-art-research.md",
-      "reports\\release-check-local.json",
+      "reports\\release-check-v03.json",
       "reports\\skill-ir.json",
-      "reports\\trigger-eval.json"
+      "reports\\trigger-eval.json",
+      "reports\\v03-evaluation.md"
     ]
   },
   "portability": {
@@ -165,7 +182,7 @@
       "network": "read-only public search and page retrieval when research is required",
       "file_write": "workspace-local article artifacts and reports only",
       "subprocess": "bundled deterministic corpus and article audit scripts",
-      "interactive": "ask only when a missing choice would materially change the article"
+      "interactive": "require explicit user confirmation after brief, outline, claim audit, draft, and final candidate"
     },
     "degradation": {
       "openai": "full workspace-local workflow",
@@ -179,9 +196,13 @@
       "root-only discoverable SKILL.md",
       "positive, negative, and near-neighbor trigger cases",
       "source ledger before product claims",
+      "human confirmation after brief, outline, source audit, draft, and final candidate",
+      "claim IDs and source audit before prose drafting",
       "SEO and internal-link plan before drafting",
       "no fabricated tests, prices, metrics, or independent endorsement",
       "automatic audit plus human rubric",
+      "natural Chinese and ordered-versus-unordered list review",
+      "exactly one of zhihu, github, or seo-blog adapters per deliverable",
       "provider-backed or human blind-review claims forbidden without evidence"
     ]
   },

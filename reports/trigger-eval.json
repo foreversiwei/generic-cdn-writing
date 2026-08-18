@@ -11,8 +11,8 @@
   ],
   "missing_description_concepts": [],
   "summary": {
-    "total": 26,
-    "passed": 26,
+    "total": 28,
+    "passed": 28,
     "false_positive": 0,
     "false_negative": 0,
     "pass_rate": 1.0
@@ -182,6 +182,33 @@
         "matched_concepts": [
           "cdn",
           "writing"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "给这个自建 CDN 成本评估仓库写 README 和 docs 指南，99CDN 只作为一种控制面实现",
+        "family": "github_repository_content",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.4,
+        "matched_concepts": [
+          "cdn",
+          "platform"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "写一篇 SEO 博客回答自建 CDN 成本怎么计算，提供 meta description、内链和决策表",
+        "family": "seo_blog_article",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.6,
+        "matched_concepts": [
+          "cdn",
+          "platform",
+          "seo"
         ],
         "negative_pattern": null
       }

@@ -1,0 +1,104 @@
+{
+  "ok": true,
+  "phase": "local",
+  "root": "C:\\Users\\user\\Documents\\Codex\\2026-08-17\\b-2\\work\\gcdn-v03-release-fixture-clean",
+  "version": "0.3.0",
+  "repository": null,
+  "summary": {
+    "pass": 7,
+    "warn": 2,
+    "block": 0
+  },
+  "gates": [
+    {
+      "gate": "package_validation",
+      "status": "pass",
+      "evidence": {
+        "ok": true,
+        "root": "C:\\Users\\user\\Documents\\Codex\\2026-08-17\\b-2\\work\\gcdn-v03-release-fixture-clean",
+        "failures": [],
+        "warnings": []
+      }
+    },
+    {
+      "gate": "version_and_report_consistency",
+      "status": "pass",
+      "evidence": {
+        "ok": true,
+        "failures": [],
+        "evidence": {
+          "manifest_name": "generic-cdn-writing",
+          "manifest_version": "0.3.0",
+          "skill_ir_name": "generic-cdn-writing",
+          "skill_ir_version": "0.3.0",
+          "trigger_ok": true,
+          "trigger_summary": {
+            "total": 28,
+            "passed": 28,
+            "false_positive": 0,
+            "false_negative": 0,
+            "pass_rate": 1.0
+          }
+        }
+      }
+    },
+    {
+      "gate": "secret_scan",
+      "status": "pass",
+      "evidence": {
+        "findings": []
+      }
+    },
+    {
+      "gate": "git_diff_check",
+      "status": "pass",
+      "evidence": {
+        "ok": true,
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "gate": "feature_branch",
+      "status": "pass",
+      "evidence": {
+        "branch": "feat/generic-cdn-writing-v03"
+      }
+    },
+    {
+      "gate": "clean_worktree",
+      "status": "pass",
+      "evidence": {
+        "dirty": false
+      }
+    },
+    {
+      "gate": "unit_tests",
+      "status": "pass",
+      "evidence": {
+        "ok": true,
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 1.715s\n\nOK"
+      }
+    },
+    {
+      "gate": "clean_install",
+      "status": "warn",
+      "evidence": {
+        "missing_evidence": "rerun with --install-check after the target revision is remote"
+      }
+    },
+    {
+      "gate": "provider_or_human_output_evidence",
+      "status": "warn",
+      "evidence": {
+        "path": "reports\\output-evidence.json",
+        "evidence_kind": null,
+        "ok": null,
+        "missing_evidence": "recorded fixtures or behavior specifications are not provider/human evidence"
+      }
+    }
+  ]
+}

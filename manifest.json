@@ -1,11 +1,11 @@
 {
   "name": "generic-cdn-writing",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "owner": "foreversiwei",
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-18",
   "status": "active",
   "maturity_tier": "production",
-  "lifecycle_stage": "public",
+  "lifecycle_stage": "public-release-candidate",
   "context_budget_tier": "production",
   "review_cadence": "monthly",
   "primary_domain": "99cdn-content",
@@ -16,11 +16,12 @@
     "agent-skills-compatible"
   ],
   "intent": {
-    "job_to_be_done": "把 CDN 文章需求调度为来源研究、SEO 与内链规划、知乎技术写作、第三方软广控制和独立审校的完整流水线。",
+    "job_to_be_done": "把 CDN 内容需求调度为由用户逐阶段确认的 Brief、论点大纲、逐声明信源审计、知乎/GitHub/SEO 博客写作和独立审校流水线。",
     "target_users": [
       "99CDN 内容运营者",
       "CDN 技术内容作者",
-      "知乎与技术博客编辑"
+      "知乎与 SEO 博客编辑",
+      "GitHub 技术文档维护者"
     ],
     "inputs": [
       "主题与目标读者",
@@ -31,7 +32,9 @@
     ],
     "outputs": [
       "文章 brief",
+      "人工批准状态",
       "来源账本",
+      "逐声明信源审计",
       "SEO 与内链计划",
       "论证大纲",
       "文章成稿",
@@ -47,12 +50,16 @@
   },
   "evidence_policy": "evidence-bound",
   "installation_scope": "GitHub and agent-skills-compatible installers",
-  "public_release": true,
+  "public_release": false,
   "release_gates": [
     "local_structure_validation",
     "trigger_boundary_eval",
     "script_unit_tests",
     "article_output_audit",
+    "sequential_human_approval_gate",
+    "claim_level_source_audit",
+    "natural_chinese_and_list_balance_audit",
+    "three_platform_adapter_regression",
     "root_entrypoint_isolation",
     "evidence_bound_claims"
   ]
