@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "skill": "generic-cdn-writing",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "generated_at": "2026-08-18",
   "evidence": [
     {
@@ -43,13 +43,18 @@
       "kind": "published-v0.3.1-verification",
       "result": "pass",
       "detail": "PR #4 merged without a direct default-branch push; release v0.3.1 aligned public-release metadata and passed discovery and isolated install verification with 10 passes, 1 evidence warning, and 0 blocks"
+    },
+    {
+      "kind": "published-v0.3.2-follow-up",
+      "result": "pass",
+      "detail": "Release v0.3.2 passed discovery and install gates; a later clean-clone audit found previously tracked Python bytecode, which PR #6 explicitly removed before the 0.3.3 release"
     }
   ],
   "missing_evidence": [
     "provider-backed output comparison",
     "completed human blind review or user preference decision",
     "a fully approved 0.3.0 article produced through all five human gates",
-    "published 0.3.2 clean-install verification at the time this pre-release report was generated",
+    "published 0.3.3 clean-install verification at the time this pre-release report was generated",
     "published article ranking and traffic",
     "conversion or editorial acceptance data",
     "cross-model stability"

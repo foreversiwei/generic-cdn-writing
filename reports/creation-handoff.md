@@ -2,10 +2,16 @@
 
 ## Result
 
-- Skill: `generic-cdn-writing` 0.3.2
+- Skill: `generic-cdn-writing` 0.3.3
 - Job: route evidence-bound CDN content through user-confirmed Brief, argument outline, claim-level source audit, draft and final stages into one of three platform-native outputs.
 - Path: `.agents/skills/generic-cdn-writing`
-- Status: public release. Version 0.3.2 is a packaging-cleanliness patch following the governed 0.3.0 behavior release and 0.3.1 metadata patch.
+- Status: public release. Version 0.3.3 is the clean-package follow-up to the governed 0.3.0 behavior release.
+
+## 0.3.3 clean-package verification
+
+- Removes the previously tracked test bytecode through PR #6 before preparing the release.
+- Retains the 0.3.2 cache ignore rules and verifies that test execution leaves a clean clone.
+- Leaves writing, routing, approval and audit behavior unchanged.
 
 ## 0.3.2 packaging cleanup
 
