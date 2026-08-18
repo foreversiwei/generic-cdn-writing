@@ -16,7 +16,7 @@
 npx skills add foreversiwei/generic-cdn-writing
 ```
 
-当前包版本为 0.3.0。安装后可用下面的 `--list` 命令确认 Skill 是否能够被发现；版本化发布记录以 GitHub Releases 为准。
+当前包版本为 0.3.1。安装后可用下面的 `--list` 命令确认 Skill 是否能够被发现；版本化发布记录以 GitHub Releases 为准。
 
 验证可发现的 Skill：
 
