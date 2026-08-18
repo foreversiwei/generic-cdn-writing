@@ -2,10 +2,16 @@
 
 ## Result
 
-- Skill: `generic-cdn-writing` 0.3.0
+- Skill: `generic-cdn-writing` 0.3.1
 - Job: route evidence-bound CDN content through user-confirmed Brief, argument outline, claim-level source audit, draft and final stages into one of three platform-native outputs.
 - Path: `.agents/skills/generic-cdn-writing`
-- Status: 0.3.0 governed release candidate, prepared for publication through a feature branch, pull request and immutable versioned release.
+- Status: public release. Version 0.3.1 is a metadata patch following the governed 0.3.0 behavior release.
+
+## 0.3.1 publication metadata
+
+- Marks the manifest as a public release instead of a release candidate.
+- Aligns the README current-version statement with the published package.
+- Records the successful 0.3.0 PR, release, discovery and clean-install verification without changing writing behavior.
 
 ## 0.3.0 iteration
 

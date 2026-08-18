@@ -1,11 +1,11 @@
 {
   "name": "generic-cdn-writing",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "owner": "foreversiwei",
   "updated_at": "2026-08-18",
   "status": "active",
   "maturity_tier": "production",
-  "lifecycle_stage": "public-release-candidate",
+  "lifecycle_stage": "public-release",
   "context_budget_tier": "production",
   "review_cadence": "monthly",
   "primary_domain": "99cdn-content",
@@ -50,7 +50,7 @@
   },
   "evidence_policy": "evidence-bound",
   "installation_scope": "GitHub and agent-skills-compatible installers",
-  "public_release": false,
+  "public_release": true,
   "release_gates": [
     "local_structure_validation",
     "trigger_boundary_eval",
