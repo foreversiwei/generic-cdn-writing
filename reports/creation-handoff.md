@@ -2,10 +2,16 @@
 
 ## Result
 
-- Skill: `generic-cdn-writing` 0.3.1
+- Skill: `generic-cdn-writing` 0.3.2
 - Job: route evidence-bound CDN content through user-confirmed Brief, argument outline, claim-level source audit, draft and final stages into one of three platform-native outputs.
 - Path: `.agents/skills/generic-cdn-writing`
-- Status: public release. Version 0.3.1 is a metadata patch following the governed 0.3.0 behavior release.
+- Status: public release. Version 0.3.2 is a packaging-cleanliness patch following the governed 0.3.0 behavior release and 0.3.1 metadata patch.
+
+## 0.3.2 packaging cleanup
+
+- Removes generated Python bytecode from the published package.
+- Adds repository ignore rules for `__pycache__/` and `*.py[cod]` so test runs do not dirty clean clones.
+- Leaves writing, routing, approval and audit behavior unchanged.
 
 ## 0.3.1 publication metadata
 
