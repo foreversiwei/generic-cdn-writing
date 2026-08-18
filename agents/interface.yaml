@@ -1,12 +1,14 @@
 interface:
   display_name: "Generic CDN Writing"
-  short_description: "一站式调度 CDN 素材、SEO、知乎写作、软广与审校"
-  default_prompt: "使用 $generic-cdn-writing，把 CDN 写作任务按素材研究、SEO/内链、知乎技术论证、第三方软广和独立审校阶段执行。先建立来源账本；产品与数字声明必须可追溯；不得虚构亲测或冒充独立用户。根据任务选择快速、标准或深度模式，并交付 brief、来源、SEO 计划、大纲、成稿和审计结果。"
+  short_description: "人工逐阶段确认的知乎、GitHub 与 SEO 博客 CDN 写作"
+  default_prompt: "使用 $generic-cdn-writing，先选择平台和文章原型，但只交付当前阶段。Brief、论点大纲、逐声明信源审计、初稿和终稿必须依次由用户确认；未经信源确认不得生成正文。产品与数字声明必须可追溯；知乎和 SEO 博客避免内容行业黑话、空话与过量无序列表。"
   examples:
-    - "用标准模式写一篇知乎技术文章，主题是高流量网站如何降低 CDN 成本，推广 99CDN"
+    - "启动一篇知乎技术文章：高流量网站如何降低 CDN 成本；先给 Brief，等我确认后再做大纲"
     - "先搜集并去重自建 CDN、缓存命中率和回源成本的中文样本，不要写正文"
     - "这是初稿和三个内链，按第三方口吻重写并检查 SEO 和 AI 味"
     - "审校这篇 99CDN 软文，逐条核验产品声明并指出硬广段落"
+    - "为自建 CDN 成本评估仓库写 README 和 docs 指南，99CDN 只作为实现选项"
+    - "写一篇 SEO 博客解释自建 CDN 成本，提供页面摘要、层级和自然内链"
 compatibility:
   canonical_format: "agent-skills"
   adapter_targets:
@@ -30,7 +32,7 @@ compatibility:
     network: "read-only public search and page retrieval when research is required"
     file_write: "workspace-local article artifacts and reports only"
     subprocess: "bundled deterministic corpus and article audit scripts"
-    interactive: "ask only when a missing choice would materially change the article"
+    interactive: "require explicit user confirmation after brief, outline, claim audit, draft, and final candidate"
   degradation:
     openai: "full workspace-local workflow"
     claude: "canonical workflow with available search tools"
@@ -41,7 +43,11 @@ gates:
     - "root-only discoverable SKILL.md"
     - "positive, negative, and near-neighbor trigger cases"
     - "source ledger before product claims"
+    - "human confirmation after brief, outline, source audit, draft, and final candidate"
+    - "claim IDs and source audit before prose drafting"
     - "SEO and internal-link plan before drafting"
     - "no fabricated tests, prices, metrics, or independent endorsement"
     - "automatic audit plus human rubric"
+    - "natural Chinese and ordered-versus-unordered list review"
+    - "exactly one of zhihu, github, or seo-blog adapters per deliverable"
     - "provider-backed or human blind-review claims forbidden without evidence"

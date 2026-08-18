@@ -10,6 +10,11 @@
       "baseline_output": "workspace outputs/writing-pipeline-zh-article.md when available",
       "with_skill_output": "workspace outputs/generic-cdn-writing-article.md",
       "assertions": [
+        "brief selects platform zhihu and one Zhihu content archetype",
+        "workflow stops after brief until explicit user confirmation",
+        "outline records section arguments and [C###] claim IDs before prose exists",
+        "claim-audit.json covers every outline claim and records use qualify or omit",
+        "approval.json proves user confirmation of brief outline and sources before draft.md",
         "article contains 1800-3500 non-whitespace Chinese characters",
         "article links at least four current 99CDN official pages",
         "required internal link https://www.99cdn.com/ is present",
@@ -17,13 +22,65 @@
         "article includes TCO or equivalent total-cost reasoning",
         "article includes an inapplicable condition or stop rule",
         "article does not invent price, savings percentage, customer case, or first-person test",
+        "article contains no 拆账单 or named content-industry jargon",
+        "unordered list items do not dominate ordered steps without a recorded reason",
         "scripts/audit_article.py exits zero"
       ],
       "human_notes": [
         "Does the article read like a Zhihu technical analysis rather than an official product page?",
         "Is the 99CDN placement useful and natural?",
         "Are headings arguments rather than generic topics?",
-        "Does the prose avoid mechanical AI rhythm?"
+        "Does the prose avoid mechanical AI rhythm?",
+        "Can three sampled paragraphs each name a distinct new fact, mechanism, limit, or action?"
+      ]
+    },
+    {
+      "id": "self-hosted-cdn-github-guide",
+      "prompt": "为一个自建 CDN 成本评估仓库写 GitHub README。读者要能理解用途、准备输入并完成第一次评估；99CDN 只能作为一个有来源的控制面选项，不要写软广。",
+      "input_files": [
+        "evals/fixtures/99cdn-source-pack.md"
+      ],
+      "baseline_output": "",
+      "with_skill_output": "work/articles/platform-matrix/README.md",
+      "assertions": [
+        "brief selects platform github and README archetype",
+        "brief outline and claim audit are explicitly approved before README drafting",
+        "README opens with project value and first successful action",
+        "README contains a fenced reproducible command or explicitly marks missing repository commands",
+        "README contains limitations and a support or troubleshooting path",
+        "product mention is factual and does not replace repository instructions",
+        "scripts/audit_article.py --platform github exits zero"
+      ],
+      "human_notes": [
+        "Can a repository visitor act without reading a marketing narrative?",
+        "Are commands, paths, and proof grounded in repository facts?",
+        "Would longer background be better placed under docs?"
+      ]
+    },
+    {
+      "id": "self-hosted-cdn-seo-blog",
+      "prompt": "写一篇 SEO 博客：自建 CDN 成本怎么计算。主意图是实施前评估，提供页面标题、description、slug、自然内链和决策方法；不要为了 SEO 强制写五个 FAQ。",
+      "input_files": [
+        "evals/fixtures/99cdn-source-pack.md"
+      ],
+      "baseline_output": "",
+      "with_skill_output": "work/articles/platform-matrix/seo-blog.md",
+      "assertions": [
+        "brief selects platform seo-blog and implementation assessment archetype",
+        "workflow stops for brief outline and source confirmation before drafting",
+        "every factual outline point maps to an audited claim ID",
+        "frontmatter or seo-meta contains title description and slug",
+        "opening gives a direct answer and scope",
+        "H2 and H3 hierarchy is continuous and follows search intent",
+        "FAQ appears only if query evidence supports it",
+        "unordered lists are limited to genuinely peer-level items",
+        "article contains no banned editorial shortcuts or unsupported factual claims",
+        "scripts/audit_article.py --platform seo-blog exits zero"
+      ],
+      "human_notes": [
+        "Does the page fully satisfy the stated search task?",
+        "Does it add a cost model or decision method beyond summarizing sources?",
+        "Are keywords and product links subordinate to reader value?"
       ]
     }
   ]

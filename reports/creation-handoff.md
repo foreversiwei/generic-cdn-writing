@@ -2,35 +2,47 @@
 
 ## Result
 
-- Skill: `generic-cdn-writing` 0.1.1
-- Job: turn a CDN writing request into sourced research, SEO/internal-link planning, Zhihu-style technical argument, evidence-bound soft promotion and independent audit.
+- Skill: `generic-cdn-writing` 0.3.0
+- Job: route evidence-bound CDN content through user-confirmed Brief, argument outline, claim-level source audit, draft and final stages into one of three platform-native outputs.
 - Path: `.agents/skills/generic-cdn-writing`
-- Status: published at `https://github.com/foreversiwei/generic-cdn-writing`; feature-branch PR, Release discovery and clean installation were verified.
+- Status: 0.3.0 governed release candidate, prepared for publication through a feature branch, pull request and immutable versioned release.
+
+## 0.3.0 iteration
+
+- `jamditis/claude-skills-journalism:source-verification`: contributed claim-specific verification trails; broad OSINT procedures were rejected.
+- `jamditis/claude-skills-journalism:editorial-workflow`: contributed explicit statuses and sign-off; newsroom calendars and staffing were rejected.
+- `rampstackco/claude-skills:ai-content-collaboration`: contributed the rule that humans own outline, facts, voice and final approval; broad team governance was rejected.
+- `vercel/eve:technical-writing`: contributed current-source verification and minimum effective edits; repository-specific conventions were rejected.
+
+Original additions are `approval-gates.md`, artifact-hash approvals, `audit_claims.py`, `check_approval.py`, and platform-aware natural-Chinese/list checks in `audit_article.py`.
 
 ## Reference skills studied
 
-- `SpaceZephyr/myskill` writing family: learned staged co-writing, topic selection, material integration and commercial placement; implemented across `references/workflow.md` and `references/soft-ad.md`.
-- `anthropics/knowledge-work-plugins:brand-voice-enforcement`: learned the separation of durable voice and contextual tone plus final validation; implemented in `references/zhihu-style.md` and the audit stage.
-- `epicenterhq/epicenter:technical-articles`: learned takeaway titles, argument headings and mechanism-first technical prose; implemented in `references/zhihu-style.md`.
-- `blink-new/claude:seo-article-writing`: learned search-intent and internal-link planning; adapted in `references/seo-linking.md` without density, image, FAQ or CMS quotas.
+- `samber/cc-skills:technical-article-writer`: kept content-type selection, a one-sentence thesis and one job per section; rejected mandatory interviews, title quotas and runtime writer delegation.
+- `oil-oil/beautify-github-readme:beautify-github-readme`: kept audience/value/proof/first-action ordering and README-to-docs boundaries; rejected visual redesign and asset-generation scope.
+- `sickn33/agentic-awesome-skills:seo-aeo-blog-writer`: kept an early direct answer and semantic heading hierarchy; rejected the fixed `What Is → Why → How → five FAQ` skeleton.
+- `acedatacloud/skills:zhihu`: confirmed that Zhihu search/read/publish is a connector concern; rejected it as style prior art.
+- `miles990/claude-software-skills:content-platforms`: rejected as a CMS implementation keyword collision.
 
-## Absorbed and rejected
+Official guidance from GitHub Docs and Google Search Central anchors README and SEO behavior. Zhihu has no equivalent official prose specification, so its adapter uses diverse public technical answers plus Chinese technical-writing norms as a baseline without imitating individual authors.
 
-- Keep: staged research, reader-question structure, material integration, argument headings and post-draft validation.
-- Adapt: brand voice becomes third-party technical voice; SEO becomes intent and semantic coverage; commercial writing gains evidence and disclosure gates.
-- Reject: fixed keyword density, mandatory images/FAQ/tables, private author persona files, fabricated first-person experience and overlapping runtime writer Skills.
-- Invent: one root router, five-layer corpus, claim ledger, required-link gate and deterministic source/article audit scripts.
+## Absorbed and invented
+
+- Keep: source ledger, claim status, third-party disclosure, product-boundary checks and deterministic audit.
+- Adapt: the old Zhihu-only argument stage becomes `platform → archetype → outline`; SEO depth changes by platform; product placement has three distinct roles.
+- Reject: one universal article format, fixed H2/FAQ/table/word-count quotas, fake first-person experience and GitHub soft-ad copy.
+- Invent: mutually exclusive `zhihu / github / seo-blog` adapters, shared three-pass human editing, heading hierarchy and generic-heading signals, and same-topic platform-matrix fixtures.
 
 ## Advantages and evidence
 
-- **Design advantage:** the package explicitly manages 99CDN facts, Zhihu technical style, SEO/internal links and soft-ad boundaries in one output contract. Evidence: root workflow and six references.
-- **Validated advantage:** local package validation passed with zero warnings; trigger boundary eval passed 26/26; deterministic script tests passed 4/4; the same-topic article audit passed with zero hard failures and zero warnings. The source-card run produced 12 unique sources: 9 official and 3 third-party. The public release flow completed with 10 passing gates, 1 missing-evidence warning and 0 blockers.
-- **Hypothesis:** the artifact pipeline should reduce instruction conflict and unsupported marketing claims compared with loading multiple broad writer Skills. Provider-backed comparison and human blind review are missing evidence.
+- **Design advantage:** each platform has a separate reader task, content archetype set, heading grammar, layout behavior and commercial boundary. Evidence: `platform-router.md` and three adapter references.
+- **Validated advantage:** trigger evaluation and package validation are rerun for each candidate version; deterministic tests now cover source-claim mapping, sequential user approvals, tamper detection, editorial shorthand and unordered-list dominance.
+- **Validated regression:** the stricter 0.3.0 audit rejects the previous Zhihu and SEO fixtures for “账单拆开/账单拆分”, while the GitHub fixture remains compatible with its task-oriented style.
+- **Hypothesis:** human checkpoints plus claim-level evidence and natural-Chinese editing should improve editorial preference. A new article must pass real user confirmations before that claim can be evaluated; platform engagement, search ranking and cross-model stability remain missing evidence.
 
 ## Verification and limits
 
-- Completed: package validation, trigger cases, unit tests, source-card generation and same-topic article audit.
-- Same-topic comparison: the new output was the only candidate that satisfied the explicitly required homepage internal link and all deterministic gates. This is local task evidence, not a general writing-quality claim.
-- Publication completed through feature branch and merged PR without a direct default-branch push. GitHub Release discovery and an isolated installation both passed.
-- Missing evidence: independent human blind review, search ranking, publication performance, conversion data and cross-model stability.
-- Excluded: account publishing, CMS writes, private-content scraping, CDN production operations and ranking guarantees.
+- Completed: dual-catalog prior-art search, five source Skill inspections, official platform guidance review, trigger eval, unit tests, structure validation and three platform-specific output audits.
+- Same-topic fixtures: `work/articles/platform-matrix/zhihu.md`, `README.md` and `seo-blog.md`.
+- An isolated clean Git fixture proved the branch, worktree, package, report, secret-scan and 13-test gates. Remote discovery and clean-install evidence are tracked separately by the governed publisher.
+- No independent editor or user preference review has been recorded. The current Zhihu profile is a public baseline, not a claim that the user's personal voice is fully learned.

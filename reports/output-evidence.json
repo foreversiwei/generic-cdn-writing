@@ -1,43 +1,45 @@
 {
   "schema_version": "1.0",
   "skill": "generic-cdn-writing",
-  "version": "0.1.1",
-  "generated_at": "2026-08-17",
+  "version": "0.3.0",
+  "generated_at": "2026-08-18",
   "evidence": [
     {
       "kind": "local-package-validation",
       "result": "pass",
-      "detail": "0 failures, 0 warnings"
+      "detail": "Both the package-local validator and qiaomu validator passed with 0 failures and 0 warnings"
     },
     {
       "kind": "trigger-boundary-eval",
       "result": "pass",
-      "detail": "26/26 cases, 0 false positives, 0 false negatives"
+      "detail": "28/28 cases passed with 0 false positives and 0 false negatives"
     },
     {
       "kind": "deterministic-unit-tests",
       "result": "pass",
-      "detail": "4/4 tests"
+      "detail": "13/13 tests, including claim-ledger integrity, approval sequencing, and artifact hash invalidation"
     },
     {
-      "kind": "same-topic-article-audit",
+      "kind": "legacy-output-regression",
       "result": "pass",
-      "detail": "0 hard failures, 0 warnings; 6 official sources; required homepage link present"
+      "detail": "The 0.2 GitHub fixture remains acceptable; the 0.2 Zhihu and SEO fixtures are intentionally rejected for banned shortcut wording under the stricter 0.3 rules"
     },
     {
-      "kind": "source-card-generation",
+      "kind": "prior-art-and-authority-review",
       "result": "pass",
-      "detail": "12 unique sources: 9 official and 3 third-party"
+      "detail": "98 candidate families discovered; four canonical source skills inspected read-only for claim verification, editorial sign-off, human ownership, and technical-writing restraint"
     },
     {
-      "kind": "published-package-verification",
+      "kind": "release-check",
       "result": "pass",
-      "detail": "feature-branch PR merged; release discovery and isolated installation passed"
+      "detail": "Isolated feature-branch check passed 7 gates with 0 blocks; clean-install and provider-or-human output evidence remain warnings"
     }
   ],
   "missing_evidence": [
     "provider-backed output comparison",
-    "completed human blind review",
+    "completed human blind review or user preference decision",
+    "a fully approved 0.3.0 article produced through all five human gates",
+    "published 0.3.0 clean-install verification",
     "published article ranking and traffic",
     "conversion or editorial acceptance data",
     "cross-model stability"

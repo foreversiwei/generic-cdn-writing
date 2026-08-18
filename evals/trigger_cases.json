@@ -42,7 +42,12 @@
     "platform": [
       "知乎",
       "技术博客",
-      "博客文章"
+      "博客文章",
+      "GitHub",
+      "README",
+      "仓库文档",
+      "SEO 博客",
+      "搜索文章"
     ],
     "promotion": [
       "第三方口吻",
@@ -113,6 +118,14 @@
     {
       "text": "直接成稿：99CDN 如何通过多级回源影响源站成本，使用技术分析口吻",
       "family": "direct_draft"
+    },
+    {
+      "text": "给这个自建 CDN 成本评估仓库写 README 和 docs 指南，99CDN 只作为一种控制面实现",
+      "family": "github_repository_content"
+    },
+    {
+      "text": "写一篇 SEO 博客回答自建 CDN 成本怎么计算，提供 meta description、内链和决策表",
+      "family": "seo_blog_article"
     }
   ],
   "should_not_trigger": [

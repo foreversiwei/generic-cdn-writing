@@ -1,0 +1,2259 @@
+{
+  "ok": true,
+  "complete": true,
+  "researched_at": "2026-08-17",
+  "queries": [
+    "Zhihu technical article writing",
+    "GitHub README technical writing",
+    "SEO blog article writing",
+    "platform specific content writing"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "Zhihu technical article writing",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 13,
+      "skillsmp_candidates": 10
+    },
+    {
+      "query": "GitHub README technical writing",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 20,
+      "skillsmp_candidates": 9
+    },
+    {
+      "query": "SEO blog article writing",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 16,
+      "skillsmp_candidates": 8
+    },
+    {
+      "query": "platform specific content writing",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 16,
+      "skillsmp_candidates": 5
+    }
+  ],
+  "candidate_family_count": 95,
+  "candidates": [
+    {
+      "family_key": "samber/cc-skills:technical-article-writer",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "samber/cc-skills",
+        "skill_name": "technical-article-writer",
+        "family_key": "samber/cc-skills:technical-article-writer",
+        "skills_sh_installs": 2100,
+        "skills_sh_installs_display": "2.1K",
+        "skills_sh_url": "https://skills.sh/samber/cc-skills/technical-article-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "aj-geddes/useful-ai-prompts:markdown-documentation",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "aj-geddes/useful-ai-prompts",
+        "skill_name": "markdown-documentation",
+        "family_key": "aj-geddes/useful-ai-prompts:markdown-documentation",
+        "skills_sh_installs": 1200,
+        "skills_sh_installs_display": "1.2K",
+        "skills_sh_url": "https://skills.sh/aj-geddes/useful-ai-prompts/markdown-documentation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "oil-oil/beautify-github-readme:beautify-github-readme",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "oil-oil/beautify-github-readme",
+        "skill_name": "beautify-github-readme",
+        "family_key": "oil-oil/beautify-github-readme:beautify-github-readme",
+        "skills_sh_installs": 732,
+        "skills_sh_installs_display": "732",
+        "skills_sh_url": "https://skills.sh/oil-oil/beautify-github-readme/beautify-github-readme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "acedatacloud/skills:zhihu",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "acedatacloud/skills",
+        "skill_name": "zhihu",
+        "family_key": "acedatacloud/skills:zhihu",
+        "skills_sh_installs": 196,
+        "skills_sh_installs_display": "196",
+        "skills_sh_url": "https://skills.sh/acedatacloud/skills/zhihu"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "liblaf/skills:write-root-readme",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "liblaf/skills",
+        "skill_name": "write-root-readme",
+        "family_key": "liblaf/skills:write-root-readme",
+        "skills_sh_installs": 174,
+        "skills_sh_installs_display": "174",
+        "skills_sh_url": "https://skills.sh/liblaf/skills/write-root-readme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "josiahsiegel/claude-plugin-marketplace:docker-platform-guide",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "josiahsiegel/claude-plugin-marketplace",
+        "skill_name": "docker-platform-guide",
+        "family_key": "josiahsiegel/claude-plugin-marketplace:docker-platform-guide",
+        "skills_sh_installs": 167,
+        "skills_sh_installs_display": "167",
+        "skills_sh_url": "https://skills.sh/josiahsiegel/claude-plugin-marketplace/docker-platform-guide"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gingiris-1031/gingiris-skills:gr-readme",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "gingiris-1031/gingiris-skills",
+        "skill_name": "gr-readme",
+        "family_key": "gingiris-1031/gingiris-skills:gr-readme",
+        "skills_sh_installs": 112,
+        "skills_sh_installs_display": "112",
+        "skills_sh_url": "https://skills.sh/gingiris-1031/gingiris-skills/gr-readme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "shareai-lab/lab-skills:media-writer",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "shareai-lab/lab-skills",
+        "skill_name": "media-writer",
+        "family_key": "shareai-lab/lab-skills:media-writer",
+        "skills_sh_installs": 109,
+        "skills_sh_installs_display": "109",
+        "skills_sh_url": "https://skills.sh/shareai-lab/lab-skills/media-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "sickn33/agentic-awesome-skills:seo-aeo-blog-writer",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "sickn33/agentic-awesome-skills",
+        "skill_name": "seo-aeo-blog-writer",
+        "family_key": "sickn33/agentic-awesome-skills:seo-aeo-blog-writer",
+        "skills_sh_installs": 93,
+        "skills_sh_installs_display": "93",
+        "skills_sh_url": "https://skills.sh/sickn33/agentic-awesome-skills/seo-aeo-blog-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "steveclarke/dotfiles:readme-writer",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "steveclarke/dotfiles",
+        "skill_name": "readme-writer",
+        "family_key": "steveclarke/dotfiles:readme-writer",
+        "skills_sh_installs": 92,
+        "skills_sh_installs_display": "92",
+        "skills_sh_url": "https://skills.sh/steveclarke/dotfiles/readme-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "blink-new/claude:seo-article-writing",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "blink-new/claude",
+        "skill_name": "seo-article-writing",
+        "family_key": "blink-new/claude:seo-article-writing",
+        "skills_sh_installs": 87,
+        "skills_sh_installs_display": "87",
+        "skills_sh_url": "https://skills.sh/blink-new/claude/seo-article-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "epicenterhq/epicenter:specification-writing",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "epicenterhq/epicenter",
+        "skill_name": "specification-writing",
+        "family_key": "epicenterhq/epicenter:specification-writing",
+        "skills_sh_installs": 85,
+        "skills_sh_installs_display": "85",
+        "skills_sh_url": "https://skills.sh/epicenterhq/epicenter/specification-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "zhenxuanshi-ship-it/meatpiegua_skills:md-to-zhihu",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "zhenxuanshi-ship-it/meatpiegua_skills",
+        "skill_name": "md-to-zhihu",
+        "family_key": "zhenxuanshi-ship-it/meatpiegua_skills:md-to-zhihu",
+        "skills_sh_installs": 73,
+        "skills_sh_installs_display": "73",
+        "skills_sh_url": "https://skills.sh/zhenxuanshi-ship-it/meatpiegua_skills/md-to-zhihu"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "pixel-process-ug/superkit-agents:spec-writing",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "pixel-process-ug/superkit-agents",
+        "skill_name": "spec-writing",
+        "family_key": "pixel-process-ug/superkit-agents:spec-writing",
+        "skills_sh_installs": 72,
+        "skills_sh_installs_display": "72",
+        "skills_sh_url": "https://skills.sh/pixel-process-ug/superkit-agents/spec-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "epicenterhq/epicenter:technical-articles",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "epicenterhq/epicenter",
+        "skill_name": "technical-articles",
+        "family_key": "epicenterhq/epicenter:technical-articles",
+        "skills_sh_installs": 71,
+        "skills_sh_installs_display": "71",
+        "skills_sh_url": "https://skills.sh/epicenterhq/epicenter/technical-articles"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thatrebeccarae/claude-marketing:github-readme",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "thatrebeccarae/claude-marketing",
+        "skill_name": "github-readme",
+        "family_key": "thatrebeccarae/claude-marketing:github-readme",
+        "skills_sh_installs": 69,
+        "skills_sh_installs_display": "69",
+        "skills_sh_url": "https://skills.sh/thatrebeccarae/claude-marketing/github-readme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "norahe0304-art/30x-seo:30x-seo-content-writer",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "norahe0304-art/30x-seo",
+        "skill_name": "30x-seo-content-writer",
+        "family_key": "norahe0304-art/30x-seo:30x-seo-content-writer",
+        "skills_sh_installs": 65,
+        "skills_sh_installs_display": "65",
+        "skills_sh_url": "https://skills.sh/norahe0304-art/30x-seo/30x-seo-content-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nimbleway/agent-skills:seo-intel",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "nimbleway/agent-skills",
+        "skill_name": "seo-intel",
+        "family_key": "nimbleway/agent-skills:seo-intel",
+        "skills_sh_installs": 60,
+        "skills_sh_installs_display": "60",
+        "skills_sh_url": "https://skills.sh/nimbleway/agent-skills/seo-intel"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "miles990/claude-software-skills:content-platforms",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "miles990/claude-software-skills",
+        "skill_name": "content-platforms",
+        "family_key": "miles990/claude-software-skills:content-platforms",
+        "skills_sh_installs": 50,
+        "skills_sh_installs_display": "50",
+        "skills_sh_url": "https://skills.sh/miles990/claude-software-skills/content-platforms"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nicepkg/ai-workflow:writing-product-specs",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "nicepkg/ai-workflow",
+        "skill_name": "writing-product-specs",
+        "family_key": "nicepkg/ai-workflow:writing-product-specs",
+        "skills_sh_installs": 47,
+        "skills_sh_installs_display": "47",
+        "skills_sh_url": "https://skills.sh/nicepkg/ai-workflow/writing-product-specs"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ovachiever/droid-tings:content-creator",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "ovachiever/droid-tings",
+        "skill_name": "content-creator",
+        "family_key": "ovachiever/droid-tings:content-creator",
+        "skills_sh_installs": 45,
+        "skills_sh_installs_display": "45",
+        "skills_sh_url": "https://skills.sh/ovachiever/droid-tings/content-creator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "remix-run/remix:write-readme",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "remix-run/remix",
+        "skill_name": "write-readme",
+        "family_key": "remix-run/remix:write-readme",
+        "skills_sh_installs": 45,
+        "skills_sh_installs_display": "45",
+        "skills_sh_url": "https://skills.sh/remix-run/remix/write-readme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wilbeibi/wilbeibi-skills:write-readme",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "wilbeibi/wilbeibi-skills",
+        "skill_name": "write-readme",
+        "family_key": "wilbeibi/wilbeibi-skills:write-readme",
+        "skills_sh_installs": 41,
+        "skills_sh_installs_display": "41",
+        "skills_sh_url": "https://skills.sh/wilbeibi/wilbeibi-skills/write-readme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "caldiaworks/caldiaworks-marketplace:ears",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "caldiaworks/caldiaworks-marketplace",
+        "skill_name": "ears",
+        "family_key": "caldiaworks/caldiaworks-marketplace:ears",
+        "skills_sh_installs": 35,
+        "skills_sh_installs_display": "35",
+        "skills_sh_url": "https://skills.sh/caldiaworks/caldiaworks-marketplace/ears"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gkwa/volcanicviper:write-readme",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "gkwa/volcanicviper",
+        "skill_name": "write-readme",
+        "family_key": "gkwa/volcanicviper:write-readme",
+        "skills_sh_installs": 35,
+        "skills_sh_installs_display": "35",
+        "skills_sh_url": "https://skills.sh/gkwa/volcanicviper/write-readme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "monumentalsystems/atlas-agent-teams:technical-writing",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "monumentalsystems/atlas-agent-teams",
+        "skill_name": "technical-writing",
+        "family_key": "monumentalsystems/atlas-agent-teams:technical-writing",
+        "skills_sh_installs": 32,
+        "skills_sh_installs_display": "32",
+        "skills_sh_url": "https://skills.sh/monumentalsystems/atlas-agent-teams/technical-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wojons/skills:exhaustive-specification",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "wojons/skills",
+        "skill_name": "exhaustive-specification",
+        "family_key": "wojons/skills:exhaustive-specification",
+        "skills_sh_installs": 30,
+        "skills_sh_installs_display": "30",
+        "skills_sh_url": "https://skills.sh/wojons/skills/exhaustive-specification"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "blink-new/claude:ai-seo-articles",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "blink-new/claude",
+        "skill_name": "ai-seo-articles",
+        "family_key": "blink-new/claude:ai-seo-articles",
+        "skills_sh_installs": 29,
+        "skills_sh_installs_display": "29",
+        "skills_sh_url": "https://skills.sh/blink-new/claude/ai-seo-articles"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "browser-act/skills:zhihu-search-api-skill",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "browser-act/skills",
+        "skill_name": "zhihu-search-api-skill",
+        "family_key": "browser-act/skills:zhihu-search-api-skill",
+        "skills_sh_installs": 25,
+        "skills_sh_installs_display": "25",
+        "skills_sh_url": "https://skills.sh/browser-act/skills/zhihu-search-api-skill"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "d-kimuson/dotfiles:article-writing",
+      "queries": [
+        "SEO blog article writing",
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "d-kimuson/dotfiles",
+        "skill_name": "article-writing",
+        "family_key": "d-kimuson/dotfiles:article-writing",
+        "skills_sh_installs": 23,
+        "skills_sh_installs_display": "23",
+        "skills_sh_url": "https://skills.sh/d-kimuson/dotfiles/article-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wizeline/sdlc-agents:authoring-release-docs",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "wizeline/sdlc-agents",
+        "skill_name": "authoring-release-docs",
+        "family_key": "wizeline/sdlc-agents:authoring-release-docs",
+        "skills_sh_installs": 23,
+        "skills_sh_installs_display": "23",
+        "skills_sh_url": "https://skills.sh/wizeline/sdlc-agents/authoring-release-docs"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "plimeor/agent-skills:blog-writing",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "plimeor/agent-skills",
+        "skill_name": "blog-writing",
+        "family_key": "plimeor/agent-skills:blog-writing",
+        "skills_sh_installs": 22,
+        "skills_sh_installs_display": "22",
+        "skills_sh_url": "https://skills.sh/plimeor/agent-skills/blog-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "arittr/spectacular:writing-specs",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "arittr/spectacular",
+        "skill_name": "writing-specs",
+        "family_key": "arittr/spectacular:writing-specs",
+        "skills_sh_installs": 21,
+        "skills_sh_installs_display": "21",
+        "skills_sh_url": "https://skills.sh/arittr/spectacular/writing-specs"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "lvsao/shopify-skill-hub:shopify-blog-seo-optimizer",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "lvsao/shopify-skill-hub",
+        "skill_name": "shopify-blog-seo-optimizer",
+        "family_key": "lvsao/shopify-skill-hub:shopify-blog-seo-optimizer",
+        "skills_sh_installs": 19,
+        "skills_sh_installs_display": "19",
+        "skills_sh_url": "https://skills.sh/lvsao/shopify-skill-hub/shopify-blog-seo-optimizer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "motiful/readme-craft:readme-craft",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "motiful/readme-craft",
+        "skill_name": "readme-craft",
+        "family_key": "motiful/readme-craft:readme-craft",
+        "skills_sh_installs": 17,
+        "skills_sh_installs_display": "17",
+        "skills_sh_url": "https://skills.sh/motiful/readme-craft/readme-craft"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "akillness/oh-my-gods:technical-writing",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "akillness/oh-my-gods",
+        "skill_name": "technical-writing",
+        "family_key": "akillness/oh-my-gods:technical-writing",
+        "skills_sh_installs": 15,
+        "skills_sh_installs_display": "15",
+        "skills_sh_url": "https://skills.sh/akillness/oh-my-gods/technical-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "art2url/career-agent-skills:software-engineer-resume",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "art2url/career-agent-skills",
+        "skill_name": "software-engineer-resume",
+        "family_key": "art2url/career-agent-skills:software-engineer-resume",
+        "skills_sh_installs": 15,
+        "skills_sh_installs_display": "15",
+        "skills_sh_url": "https://skills.sh/art2url/career-agent-skills/software-engineer-resume"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "unifuncs/skills:unifuncs-deep-research",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "unifuncs/skills",
+        "skill_name": "unifuncs-deep-research",
+        "family_key": "unifuncs/skills:unifuncs-deep-research",
+        "skills_sh_installs": 15,
+        "skills_sh_installs_display": "15",
+        "skills_sh_url": "https://skills.sh/unifuncs/skills/unifuncs-deep-research"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "benjaminwestern/google-engineer-skills:tech-writer",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "benjaminwestern/google-engineer-skills",
+        "skill_name": "tech-writer",
+        "family_key": "benjaminwestern/google-engineer-skills:tech-writer",
+        "skills_sh_installs": 13,
+        "skills_sh_installs_display": "13",
+        "skills_sh_url": "https://skills.sh/benjaminwestern/google-engineer-skills/tech-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "arthurzakirov/proofstack:github-profile-authority-page",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "arthurzakirov/proofstack",
+        "skill_name": "github-profile-authority-page",
+        "family_key": "arthurzakirov/proofstack:github-profile-authority-page",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/arthurzakirov/proofstack/github-profile-authority-page"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "arthurzakirov/proofstack:profile-readme-positioning",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "arthurzakirov/proofstack",
+        "skill_name": "profile-readme-positioning",
+        "family_key": "arthurzakirov/proofstack:profile-readme-positioning",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/arthurzakirov/proofstack/profile-readme-positioning"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "d-wwei/great-writer:great-writer",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "d-wwei/great-writer",
+        "skill_name": "great-writer",
+        "family_key": "d-wwei/great-writer:great-writer",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/d-wwei/great-writer/great-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "geb-algebra/writer-skill:writing-blogs",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "geb-algebra/writer-skill",
+        "skill_name": "writing-blogs",
+        "family_key": "geb-algebra/writer-skill:writing-blogs",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/geb-algebra/writer-skill/writing-blogs"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "plimeor/agent-skills:writing-blog",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "plimeor/agent-skills",
+        "skill_name": "writing-blog",
+        "family_key": "plimeor/agent-skills:writing-blog",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/plimeor/agent-skills/writing-blog"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "blink-new/claude:blink-seo-articles",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "blink-new/claude",
+        "skill_name": "blink-seo-articles",
+        "family_key": "blink-new/claude:blink-seo-articles",
+        "skills_sh_installs": 10,
+        "skills_sh_installs_display": "10",
+        "skills_sh_url": "https://skills.sh/blink-new/claude/blink-seo-articles"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affitor/affiliate-skills:affiliate-blog-builder",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "affitor/affiliate-skills",
+        "skill_name": "affiliate-blog-builder",
+        "family_key": "affitor/affiliate-skills:affiliate-blog-builder",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/affitor/affiliate-skills/affiliate-blog-builder"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/skills:blog-writer",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "openclaw/skills",
+        "skill_name": "blog-writer",
+        "family_key": "openclaw/skills:blog-writer",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/openclaw/skills/blog-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "britt/claude-code-skills:writing-product-specs",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "britt/claude-code-skills",
+        "skill_name": "writing-product-specs",
+        "family_key": "britt/claude-code-skills:writing-product-specs",
+        "skills_sh_installs": 8,
+        "skills_sh_installs_display": "8",
+        "skills_sh_url": "https://skills.sh/britt/claude-code-skills/writing-product-specs"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "hainamchung/agent-assistant:content-creator",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "hainamchung/agent-assistant",
+        "skill_name": "content-creator",
+        "family_key": "hainamchung/agent-assistant:content-creator",
+        "skills_sh_installs": 8,
+        "skills_sh_installs_display": "8",
+        "skills_sh_url": "https://skills.sh/hainamchung/agent-assistant/content-creator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "angelmic/everything-claude-code-ios:article-writing",
+      "queries": [
+        "SEO blog article writing",
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "angelmic/everything-claude-code-ios",
+        "skill_name": "article-writing",
+        "family_key": "angelmic/everything-claude-code-ios:article-writing",
+        "skills_sh_installs": 7,
+        "skills_sh_installs_display": "7",
+        "skills_sh_url": "https://skills.sh/angelmic/everything-claude-code-ios/article-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "boticello/ali-claude-skills:content-creator",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "boticello/ali-claude-skills",
+        "skill_name": "content-creator",
+        "family_key": "boticello/ali-claude-skills:content-creator",
+        "skills_sh_installs": 6,
+        "skills_sh_installs_display": "6",
+        "skills_sh_url": "https://skills.sh/boticello/ali-claude-skills/content-creator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "easyzoom/aix-skills:readme-writing",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "GitHub README technical writing",
+        "owner_repo": "easyzoom/aix-skills",
+        "skill_name": "readme-writing",
+        "family_key": "easyzoom/aix-skills:readme-writing",
+        "skills_sh_installs": 6,
+        "skills_sh_installs_display": "6",
+        "skills_sh_url": "https://skills.sh/easyzoom/aix-skills/readme-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jarmen423/skills:content-creator",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "jarmen423/skills",
+        "skill_name": "content-creator",
+        "family_key": "jarmen423/skills:content-creator",
+        "skills_sh_installs": 6,
+        "skills_sh_installs_display": "6",
+        "skills_sh_url": "https://skills.sh/jarmen423/skills/content-creator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "arthrod/conejo-skills:blog-writing",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "arthrod/conejo-skills",
+        "skill_name": "blog-writing",
+        "family_key": "arthrod/conejo-skills:blog-writing",
+        "skills_sh_installs": 5,
+        "skills_sh_installs_display": "5",
+        "skills_sh_url": "https://skills.sh/arthrod/conejo-skills/blog-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "azukiazusa1/skills:article-review",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "azukiazusa1/skills",
+        "skill_name": "article-review",
+        "family_key": "azukiazusa1/skills:article-review",
+        "skills_sh_installs": 5,
+        "skills_sh_installs_display": "5",
+        "skills_sh_url": "https://skills.sh/azukiazusa1/skills/article-review"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "peterbamuhigire/chwezi-dev-engine:blog-writer",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "peterbamuhigire/chwezi-dev-engine",
+        "skill_name": "blog-writer",
+        "family_key": "peterbamuhigire/chwezi-dev-engine:blog-writer",
+        "skills_sh_installs": 5,
+        "skills_sh_installs_display": "5",
+        "skills_sh_url": "https://skills.sh/peterbamuhigire/chwezi-dev-engine/blog-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jahfaliabdulrahman-dev/hermes-skills:specification-writing",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "jahfaliabdulrahman-dev/hermes-skills",
+        "skill_name": "specification-writing",
+        "family_key": "jahfaliabdulrahman-dev/hermes-skills:specification-writing",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/jahfaliabdulrahman-dev/hermes-skills/specification-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "lidessen/rossovia:technical-article-writing",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "lidessen/rossovia",
+        "skill_name": "technical-article-writing",
+        "family_key": "lidessen/rossovia:technical-article-writing",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/lidessen/rossovia/technical-article-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nnnnzs/zhihu-cli:zhihu-cli",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "nnnnzs/zhihu-cli",
+        "skill_name": "zhihu-cli",
+        "family_key": "nnnnzs/zhihu-cli:zhihu-cli",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/nnnnzs/zhihu-cli/zhihu-cli"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "aias00/agent-skills:technical-article-preflight",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "aias00/agent-skills",
+        "skill_name": "technical-article-preflight",
+        "family_key": "aias00/agent-skills:technical-article-preflight",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/aias00/agent-skills/technical-article-preflight"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nnnnzs/agent-skills:zhihu-cli",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Zhihu technical article writing",
+        "owner_repo": "nnnnzs/agent-skills",
+        "skill_name": "zhihu-cli",
+        "family_key": "nnnnzs/agent-skills:zhihu-cli",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/nnnnzs/agent-skills/zhihu-cli"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "paveg/funailog:blog-article-writing",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "SEO blog article writing",
+        "owner_repo": "paveg/funailog",
+        "skill_name": "blog-article-writing",
+        "family_key": "paveg/funailog:blog-article-writing",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/paveg/funailog/blog-article-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "sydonayrex/tldr:specification-writing",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "platform specific content writing",
+        "owner_repo": "sydonayrex/tldr",
+        "skill_name": "specification-writing",
+        "family_key": "sydonayrex/tldr:specification-writing",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/sydonayrex/tldr/specification-writing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:agent-transcript",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "agent-transcript",
+        "author": "openclaw",
+        "description": "Add a redacted agent transcript section to GitHub PR or issue bodies during OpenClaw agent-created PR/issue workflows.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/agent-transcript",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-agent-transcript",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-05-26T15:17:53+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/agent-transcript",
+        "family_key": "openclaw/openclaw:agent-transcript",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:clawsweeper",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "clawsweeper",
+        "author": "openclaw",
+        "description": "Use for all ClawSweeper work: OpenClaw issue/PR sweep reports, repair jobs, cloud fix PRs, @clawsweeper maintainer mention commands, trusted ClawSweeper-reviewed autofix/automerge, GitHub Actions monitoring, permissions, gates, and manual backfills.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/clawsweeper",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-clawsweeper",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-08-07T21:39:08+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/clawsweeper",
+        "family_key": "openclaw/openclaw:clawsweeper",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:gh-issues",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "gh-issues",
+        "author": "openclaw",
+        "description": "Fetch GitHub issues, select candidates, spawn background fix agents, open PRs, and optionally process PR review comments.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/gh-issues",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/skills-gh-issues",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-06-19T20:00:38+00:00",
+        "source_key": "openclaw/openclaw:skills/gh-issues",
+        "family_key": "openclaw/openclaw:gh-issues",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:gitcrawl",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "gitcrawl",
+        "author": "openclaw",
+        "description": "GitHub archive: issue/PR search, sync freshness, duplicate clusters, gh-shim PR status, and Gitcrawl repo work.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/gitcrawl",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-gitcrawl",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-05-17T11:18:23+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/gitcrawl",
+        "family_key": "openclaw/openclaw:gitcrawl",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:github",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "github",
+        "author": "openclaw",
+        "description": "GitHub CLI for issues, PRs, CI/check logs, comments, reviews, releases, repos, and gh api queries.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/github",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/skills-github",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-07-08T15:07:09+00:00",
+        "source_key": "openclaw/openclaw:skills/github",
+        "family_key": "openclaw/openclaw:github",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/openclaw/openclaw/tree/main/extensions/oc-path/src/oc-path/tests/fixtures/real"
+          }
+        ],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:openclaw-ci-limits",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openclaw-ci-limits",
+        "author": "openclaw",
+        "description": "Manage OpenClaw GitHub Actions and Blacksmith CI capacity, runner-registration budgets, fanout caps, main-push single-flight, shard sizing, hosted-runner offload, queue health, and safe ramp-down/ramp-up changes. Use when tuning `.github/workflows/*`, `docs/ci.md`, CI runner labels, matrix `max-parallel`, ClawSweeper/Blacksmith burst protection, CodeQL runner placement, or investigating slow/queued OpenClaw CI.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-ci-limits",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-ci-limits",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-08-13T11:04:51+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/openclaw-ci-limits",
+        "family_key": "openclaw/openclaw:openclaw-ci-limits",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:openclaw-pr-maintainer",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openclaw-pr-maintainer",
+        "author": "openclaw",
+        "description": "Use immediately for any pasted OpenClaw GitHub issue or PR URL/number, and for OpenClaw issue/PR orchestration, review, triage, root-cause repair, PR rewrite, duplicate search, opener identity/who wrote it, author account age/activity, comments, labels, close, land, or maintainer evidence checks.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-pr-maintainer",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-pr-maintainer",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-08-09T20:25:34+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/openclaw-pr-maintainer",
+        "family_key": "openclaw/openclaw:openclaw-pr-maintainer",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:openclaw-secret-scanning-maintainer",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openclaw-secret-scanning-maintainer",
+        "author": "openclaw",
+        "description": "Triage, redact, clean up, and resolve OpenClaw GitHub Secret Scanning alerts in issues or PRs.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-secret-scanning-maintainer",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-secret-scanning-maintainer",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-07-22T03:28:43+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/openclaw-secret-scanning-maintainer",
+        "family_key": "openclaw/openclaw:openclaw-secret-scanning-maintainer",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:tag-duplicate-prs-issues",
+      "queries": [
+        "GitHub README technical writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "tag-duplicate-prs-issues",
+        "author": "openclaw",
+        "description": "Use gitcrawl to search duplicate OpenClaw PRs/issues, group related work in prtags, and sync duplicate state to GitHub.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/tag-duplicate-prs-issues",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-tag-duplicate-prs-issues",
+        "repo_stars": 386158,
+        "catalog_updated_at": "2026-04-28T00:12:54+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/tag-duplicate-prs-issues",
+        "family_key": "openclaw/openclaw:tag-duplicate-prs-issues",
+        "aliases": [],
+        "query": "GitHub README technical writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:benchmark-methodology",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "benchmark-methodology",
+        "author": "affaan-m",
+        "description": "Use after competitive-platform-analysis has produced a tiered competitor set. Scores each competitor across nine weighted dimensions (positioning, voice, visual craft, offer packaging, evidence, enterprise-readiness, thought leadership, pricing, client's strategic tension) with explicit 1–5 rubrics and a tension-plot. Precedes competitive-report-structure.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/benchmark-methodology",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-benchmark-methodology",
+        "repo_stars": 239888,
+        "catalog_updated_at": "2026-07-17T21:13:49+00:00",
+        "source_key": "affaan-m/ecc:skills/benchmark-methodology",
+        "family_key": "affaan-m/ecc:benchmark-methodology",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/benchmark-methodology"
+          }
+        ],
+        "query": "platform specific content writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:competitive-platform-analysis",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "competitive-platform-analysis",
+        "author": "affaan-m",
+        "description": "Use when scoping a competitive landscape — identifying, categorising, and score-filtering a competitor set before any benchmarking begins. Decides who counts as a competitor, which tier they belong to, and which sources to mine. First step in the three-skill competitive pipeline; precedes benchmark-methodology.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/competitive-platform-analysis",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-competitive-platform-analysis",
+        "repo_stars": 239888,
+        "catalog_updated_at": "2026-06-11T19:58:42+00:00",
+        "source_key": "affaan-m/ecc:skills/competitive-platform-analysis",
+        "family_key": "affaan-m/ecc:competitive-platform-analysis",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/competitive-platform-analysis"
+          }
+        ],
+        "query": "platform specific content writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:compose-multiplatform-patterns",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "compose-multiplatform-patterns",
+        "author": "affaan-m",
+        "description": "Compose Multiplatform and Jetpack Compose patterns for KMP projects — state management, navigation, theming, performance, and platform-specific UI. Use when building Compose or Jetpack Compose UI, state, navigation, or theming in a KMP project.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/compose-multiplatform-patterns",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-compose-multiplatform-patterns",
+        "repo_stars": 239888,
+        "catalog_updated_at": "2026-08-12T03:58:14+00:00",
+        "source_key": "affaan-m/ecc:skills/compose-multiplatform-patterns",
+        "family_key": "affaan-m/ecc:compose-multiplatform-patterns",
+        "aliases": [],
+        "query": "platform specific content writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:content-engine",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "content-engine",
+        "author": "affaan-m",
+        "description": "Create platform-native content systems for X, LinkedIn, TikTok, YouTube, newsletters, and repurposed multi-platform campaigns. Use when the user wants social posts, threads, scripts, content calendars, or one source asset adapted cleanly across platforms.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/content-engine",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-content-engine",
+        "repo_stars": 239888,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/content-engine",
+        "family_key": "affaan-m/ecc:content-engine",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.cursor/skills/content-engine"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.cursor/skills/content-engine"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/content-engine"
+          }
+        ],
+        "query": "platform specific content writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:crosspost",
+      "queries": [
+        "platform specific content writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "crosspost",
+        "author": "affaan-m",
+        "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/crosspost",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-crosspost",
+        "repo_stars": 239888,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/crosspost",
+        "family_key": "affaan-m/ecc:crosspost",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/crosspost"
+          }
+        ],
+        "query": "platform specific content writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:seo",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "seo",
+        "author": "affaan-m",
+        "description": "Audit, plan, and implement SEO improvements across technical SEO, on-page optimization, structured data, Core Web Vitals, and content strategy. Use when the user wants better search visibility, SEO remediation, schema markup, sitemap/robots work, or keyword mapping.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/seo",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-seo",
+        "repo_stars": 239888,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/seo",
+        "family_key": "affaan-m/ecc:seo",
+        "aliases": [
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/seo"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/seo"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/seo"
+          }
+        ],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:interstitials",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "interstitials",
+        "author": "thedaviddias",
+        "description": "Use when applies to CSS and JavaScript implementations of modals, overlays, pop-ups, cookie banners, newsletter sign-up dialogs, and promotional overlays. Check for `position: fixed`, `position: absolute` with large z-index, backdrop overlays, and JavaScript that shows modals on page load or shortly after. Consider both SEO impact (Google) and accessibility (WCAG focus management).",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/interstitials",
+        "skillsmp_url": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-interstitials",
+        "repo_stars": 73525,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/interstitials",
+        "family_key": "thedaviddias/front-end-checklist:interstitials",
+        "aliases": [],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:meta-title",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "meta-title",
+        "author": "thedaviddias",
+        "description": "Use when auditing page metadata or generating SEO-optimized titles. Applies to every HTML page that should appear in search results.",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/meta-title",
+        "skillsmp_url": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-meta-title",
+        "repo_stars": 73525,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/meta-title",
+        "family_key": "thedaviddias/front-end-checklist:meta-title",
+        "aliases": [],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:nap-consistency",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nap-consistency",
+        "author": "thedaviddias",
+        "description": "Use when auditing a local business website for local SEO. Applies to any business that has a physical address and wants to appear in local search results or Google Maps.",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/nap-consistency",
+        "skillsmp_url": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-nap-consistency",
+        "repo_stars": 73525,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/nap-consistency",
+        "family_key": "thedaviddias/front-end-checklist:nap-consistency",
+        "aliases": [],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:quality",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "quality",
+        "author": "thedaviddias",
+        "description": "Use when evaluating content pages for SEO quality. Applies to blog posts, product descriptions, landing pages, or any page expected to receive organic search traffic.",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/quality",
+        "skillsmp_url": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-quality",
+        "repo_stars": 73525,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/quality",
+        "family_key": "thedaviddias/front-end-checklist:quality",
+        "aliases": [],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:reading-level",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "reading-level",
+        "author": "thedaviddias",
+        "description": "Use when reviewing content pages for user experience and SEO. Applies to blog posts, landing pages, how-to guides, and any long-form content intended for a broad audience.",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/reading-level",
+        "skillsmp_url": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-reading-level",
+        "repo_stars": 73525,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/reading-level",
+        "family_key": "thedaviddias/front-end-checklist:reading-level",
+        "aliases": [],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:robots-txt",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "robots-txt",
+        "author": "thedaviddias",
+        "description": "Use when applies to any public website. Use when auditing technical SEO foundations or diagnosing crawl coverage gaps.",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/robots-txt",
+        "skillsmp_url": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-robots-txt",
+        "repo_stars": 73525,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/robots-txt",
+        "family_key": "thedaviddias/front-end-checklist:robots-txt",
+        "aliases": [],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:service-area",
+      "queries": [
+        "SEO blog article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "service-area",
+        "author": "thedaviddias",
+        "description": "Use when applies to service businesses (plumbers, lawyers, consultants) serving multiple regions. Use when planning local SEO strategy for businesses without brick-and-mortar locations in every city.",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/service-area",
+        "skillsmp_url": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-service-area",
+        "repo_stars": 73525,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/service-area",
+        "family_key": "thedaviddias/front-end-checklist:service-area",
+        "aliases": [],
+        "query": "SEO blog article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "itwanger/tobebetterjavaer:zhihu-search",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "zhihu-search",
+        "author": "itwanger",
+        "description": "Search Zhihu for content using the search_v3 API. Use when user mentions Zhihu, 知乎, searching Zhihu, searching 知乎, Zhihu search, 知乎搜索, searching for answers/articles on Zhihu, or says 搜一下知乎, 在知乎上搜索, 找知乎上的, 知乎上搜搜. Also applies to exploring Zhihu's internal API endpoints, extracting search results in bulk, and monitoring Zhihu for new content on specific topics.",
+        "content_language": "en",
+        "github_url": "https://github.com/itwanger/toBeBetterJavaer/tree/master/output/zhihu-search/zhihu-search",
+        "skillsmp_url": "https://skillsmp.com/creators/itwanger/tobebetterjavaer/output-zhihu-search-zhihu-search",
+        "repo_stars": 17481,
+        "catalog_updated_at": "2026-05-25T08:22:14+00:00",
+        "source_key": "itwanger/tobebetterjavaer:output/zhihu-search/zhihu-search",
+        "family_key": "itwanger/tobebetterjavaer:zhihu-search",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "teamwiseflow/xiaobei:zhihu-publish",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "zhihu-publish",
+        "author": "TeamWiseFlow",
+        "description": "通过 forked camoufox-cli 持久化 session zhihu 在知乎发布文章或回答。知乎无可用公开 API，需通过浏览器操作完成发布。",
+        "content_language": "zh",
+        "github_url": "https://github.com/TeamWiseFlow/xiaobei/tree/master/crews/main/skills/zhihu-publish",
+        "skillsmp_url": "https://skillsmp.com/creators/teamwiseflow/xiaobei/crews-main-skills-zhihu-publish",
+        "repo_stars": 8414,
+        "catalog_updated_at": "2026-07-28T02:45:03+00:00",
+        "source_key": "teamwiseflow/xiaobei:crews/main/skills/zhihu-publish",
+        "family_key": "teamwiseflow/xiaobei:zhihu-publish",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "zai-org/glm-ocr:glmocr",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "glmocr",
+        "author": "zai-org",
+        "description": "Trigger when: (1) User wants to extract text, tables, formulas, or structured data from images/PDFs/scanned documents, (2) User mentions \"OCR\", \"文字识别\", \"文档解析\", (3) User has a document (screenshot, scanned page, invoice, paper, whiteboard photo) and needs its content in structured form, (4) User asks to parse, digitize, or extract content from a visual document.\n\nInvokes the GLM-OCR SDK (pip install glmocr) to parse documents via Zhipu's cloud API. No GPU required. Returns structured JSON (regions with labels + bounding boxes) and Markdown. Agent can operate entirely via CLI — no YAML files needed.\n\nNOT for: real-time camera feeds, audio transcription, or non-document images (photos, illustrations).",
+        "content_language": "en",
+        "github_url": "https://github.com/zai-org/GLM-OCR/tree/main/skills/sdk",
+        "skillsmp_url": "https://skillsmp.com/creators/zai-org/glm-ocr/skills-sdk",
+        "repo_stars": 7271,
+        "catalog_updated_at": "2026-03-18T12:13:01+00:00",
+        "source_key": "zai-org/glm-ocr:skills/sdk",
+        "family_key": "zai-org/glm-ocr:glmocr",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "zai-org/glm-ocr:glmocr-formula",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "glmocr-formula",
+        "author": "zai-org",
+        "description": "Official skill for recognizing and extracting mathematical formulas from images and PDFs into LaTeX format using ZhiPu GLM-OCR API. Supports complex equations, inline formulas, and formula blocks. Use this skill when the user wants to extract formulas, convert formula images to LaTeX, or OCR mathematical expressions.",
+        "content_language": "mul",
+        "github_url": "https://github.com/zai-org/GLM-OCR/tree/main/skills/glmocr-formula",
+        "skillsmp_url": "https://skillsmp.com/creators/zai-org/glm-ocr/skills-glmocr-formula",
+        "repo_stars": 7271,
+        "catalog_updated_at": "2026-03-19T12:06:45+00:00",
+        "source_key": "zai-org/glm-ocr:skills/glmocr-formula",
+        "family_key": "zai-org/glm-ocr:glmocr-formula",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "zai-org/glm-ocr:glmocr-handwriting",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "glmocr-handwriting",
+        "author": "zai-org",
+        "description": "Official skill for recognizing handwritten text from images using ZhiPu GLM-OCR API. Supports various handwriting styles, languages, and mixed handwritten/printed content. Use this skill when the user wants to read handwritten notes, convert handwriting to text, or OCR handwritten documents.",
+        "content_language": "mul",
+        "github_url": "https://github.com/zai-org/GLM-OCR/tree/main/skills/glmocr-handwriting",
+        "skillsmp_url": "https://skillsmp.com/creators/zai-org/glm-ocr/skills-glmocr-handwriting",
+        "repo_stars": 7271,
+        "catalog_updated_at": "2026-03-19T12:06:45+00:00",
+        "source_key": "zai-org/glm-ocr:skills/glmocr-handwriting",
+        "family_key": "zai-org/glm-ocr:glmocr-handwriting",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "zai-org/glm-ocr:glmocr-table",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "glmocr-table",
+        "author": "zai-org",
+        "description": "Official skill for recognizing and extracting tables from images and PDFs into Markdown format using ZhiPu GLM-OCR API. Supports complex tables, merged cells, and multi-page documents. Use this skill when the user wants to extract tables, recognize spreadsheets, or convert table images to editable format.",
+        "content_language": "mul",
+        "github_url": "https://github.com/zai-org/GLM-OCR/tree/main/skills/glmocr-table",
+        "skillsmp_url": "https://skillsmp.com/creators/zai-org/glm-ocr/skills-glmocr-table",
+        "repo_stars": 7271,
+        "catalog_updated_at": "2026-03-19T12:06:45+00:00",
+        "source_key": "zai-org/glm-ocr:skills/glmocr-table",
+        "family_key": "zai-org/glm-ocr:glmocr-table",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "opensquilla/opensquilla:meta-content-publish-pipeline",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "meta-content-publish-pipeline",
+        "author": "opensquilla",
+        "description": "Use this meta-skill instead of answering directly when the user wants to turn an idea, research, notes, talk, or document into publishable blog, social, Xiaohongshu, Zhihu, slide, newsletter, or short-video content through multi-skill orchestration.",
+        "content_language": "en",
+        "github_url": "https://github.com/opensquilla/opensquilla/tree/main/src/opensquilla/skills/exp/meta-content-publish-pipeline",
+        "skillsmp_url": "https://skillsmp.com/creators/opensquilla/opensquilla/src-opensquilla-skills-exp-meta-content-publish-pipeline",
+        "repo_stars": 6579,
+        "catalog_updated_at": "2026-05-31T15:54:36+00:00",
+        "source_key": "opensquilla/opensquilla:src/opensquilla/skills/exp/meta-content-publish-pipeline",
+        "family_key": "opensquilla/opensquilla:meta-content-publish-pipeline",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wechatsync/wechatsync:wechatsync",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "wechatsync",
+        "author": "wechatsync",
+        "description": "Multi-platform article publisher and content distribution tool. Sync and cross-post Markdown/HTML articles to 29+ platforms including Zhihu (知乎), Juejin (掘金), CSDN, Toutiao (头条), Weibo (微博), Xiaohongshu (小红书), Bilibili (B站), WordPress, Typecho, WeChat (微信公众号), and more. Use when the user wants to publish, sync, cross-post, or distribute articles (文章同步/多平台发布/一键发布) to Chinese content platforms, tech communities, blogging sites, or self-hosted blogs. Also use when checking platform login status or extracting articles from web pages. Keywords: content syndication, blog distribution, multi-platform publishing, self-media (自媒体), content creator tools.",
+        "content_language": "en",
+        "github_url": "https://github.com/wechatsync/Wechatsync/tree/v2/skills/wechatsync",
+        "skillsmp_url": "https://skillsmp.com/creators/wechatsync/wechatsync/skills-wechatsync",
+        "repo_stars": 6162,
+        "catalog_updated_at": "2026-03-12T05:31:36+00:00",
+        "source_key": "wechatsync/wechatsync:skills/wechatsync",
+        "family_key": "wechatsync/wechatsync:wechatsync",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "epiral/bb-browser:bb-browser-openclaw",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "bb-browser-openclaw",
+        "author": "epiral",
+        "description": "Turn any website into a CLI command. 36 platforms, 103 commands — Twitter, Reddit, GitHub, YouTube, Zhihu, Bilibili, Weibo, and more. Uses OpenClaw's browser directly, no extra extension needed.",
+        "content_language": "en",
+        "github_url": "https://github.com/epiral/bb-browser/tree/main/skills/bb-browser-openclaw",
+        "skillsmp_url": "https://skillsmp.com/creators/epiral/bb-browser/skills-bb-browser-openclaw",
+        "repo_stars": 6053,
+        "catalog_updated_at": "2026-03-15T05:47:16+00:00",
+        "source_key": "epiral/bb-browser:skills/bb-browser-openclaw",
+        "family_key": "epiral/bb-browser:bb-browser-openclaw",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "laoma2053/awesome-zhuiju-free:geo-article-writer",
+      "queries": [
+        "Zhihu technical article writing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "geo-article-writer",
+        "author": "laoma2053",
+        "description": "Write, rewrite, adapt, or review Chinese GEO/SEO long-form content that primarily promotes the GitHub repository laoma2053/awesome-zhuiju-free, with zhuiju.me as a secondary browsing entry. Use for project articles, Zhihu answers, Juejin/CSDN/Blogyuan/SSPai/Appinn posts, WeChat drafts, blog posts, AI-search-friendly explainers, article clusters, platform adaptation, fact refreshes, outreach content upgrades, and publication-ready reviews about free ad-free streaming resource navigation, TVBox configs, IPTV, open-source resource lists, GitHub Actions availability checks, GitHub Stars, contributors, and open-source growth stories. Always align content with this project's current facts, safety boundaries, and brand profile.",
+        "content_language": "en",
+        "github_url": "https://github.com/laoma2053/awesome-zhuiju-free/tree/main/skills/geo-article-writer",
+        "skillsmp_url": "https://skillsmp.com/creators/laoma2053/awesome-zhuiju-free/skills-geo-article-writer",
+        "repo_stars": 5687,
+        "catalog_updated_at": "2026-07-17T19:48:50+00:00",
+        "source_key": "laoma2053/awesome-zhuiju-free:skills/geo-article-writer",
+        "family_key": "laoma2053/awesome-zhuiju-free:geo-article-writer",
+        "aliases": [],
+        "query": "Zhihu technical article writing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}

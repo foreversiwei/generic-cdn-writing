@@ -1,6 +1,6 @@
 interface:
   display_name: "Generic CDN Writing"
-  short_description: "调度资料、SEO、知乎技术写作、软广与审校"
-  default_prompt: "使用 $generic-cdn-writing。把我的 CDN 文章需求整理为 brief，按需要补充公开资料，生成来源账本、SEO 与内链计划、论证大纲、知乎式第三方技术文章和审计报告。不得虚构实测、数据、报价或独立背书；99CDN 产品声明优先回到当前官网与帮助文档。"
+  short_description: "适配知乎、GitHub 与 SEO 博客的 CDN 技术写作"
+  default_prompt: "使用 $generic-cdn-writing。调用只启动分阶段流程，不授权直接生成全文。先交付 Brief 并等待用户确认，再交付带 Claim ID 的论点大纲并等待确认；逐声明完成信源审计并再次等待确认，前三关通过后才写初稿。初稿和终稿也分别等待确认。知乎与 SEO 博客使用普通、自然的中文，少用黑话和无序列表；不得虚构实测、数据、报价或独立背书。"
 policy:
   allow_implicit_invocation: true
